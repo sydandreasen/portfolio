@@ -39,7 +39,74 @@ $dblue: #29648a;
 
   .main-content {
     color: $shell;
-    padding: 2% 1%;
+    padding: 2%;
     text-align: center;
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .onethird-column {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 33%;
+      min-width: 225px;
+      margin: auto;
+    }
+
+    .twothirds-column {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 67%;
+      min-width: 250;
+      margin: auto;
+    }
+
+    .profile-pic {
+      width: 70%;
+      margin: auto;
+      border-radius: 6%;
+      border: 6px $dblue solid;
+      box-shadow: $lblue 6px 8px 4px;
+      margin-bottom: 16px;
+    }
+
+    .text {
+      text-align: left;
+
+      p {
+        margin-top: 1%;
+        padding-top: 1%;
+        border-top: $lblue solid 1px;
+      }
+    }
+
+    .skills {
+      background-color: $shell;
+      color: $dark;
+      padding: 1%;
+      border-radius: 1vw;
+      width: 67%;
+      border: 4px $dblue solid;
+      box-shadow: $lblue 4px 6px 4px;
+
+      .skill-pic {
+        padding: 1%;
+        width: 3%;
+        min-width: 30px;
+      }
+    }
+  }
+
+  footer {
+    text-align: center;
+    color: $shell;
+    padding: 0.2%;
   }
 }
