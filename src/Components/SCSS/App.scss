@@ -1,0 +1,45 @@
+$grape: #94618e;
+$eggplant: #49274a;
+$sand: #f4decb;
+$shell: #f8eee7;
+
+$dark: #25274d;
+$purple: #464866;
+$light: #aaabb8;
+$lblue: #2e9cca;
+$dblue: #29648a;
+
+* {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  margin: 0;
+}
+
+.App {
+  background-color: $purple;
+  height: 100vh;
+
+  .nav-wrapper {
+    background-color: $dark;
+
+    .nav-tabs {
+      .nav-tab {
+        color: $light;
+      }
+
+      .Mui-selected {
+        color: $shell;
+      }
+
+      .MuiTabs-indicator {
+        background-color: $shell !important;
+      }
+    }
+  }
+
+  .main-content {
+    color: $shell;
+    padding: 2% 1%;
+    text-align: center;
+  }
+}
