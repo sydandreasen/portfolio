@@ -1,5 +1,9 @@
 import React from "react";
 import Tooltip from "@material-ui/core/Tooltip";
+import EmailIcon from "@material-ui/icons/Email";
+import PhoneIcon from "@material-ui/icons/Phone";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import FacebookIcon from "@material-ui/icons/Facebook";
 import {
   fadeInLeft,
   fadeInRight,
@@ -162,14 +166,15 @@ export const About = (props) => {
             {/* TODO : add icons and links */}
             <div style={animations.fadeInLeft}>
               <p>
-                <span>Email Me : </span>
+                <EmailIcon style={{ verticalAlign: "middle" }} />
+                <span> Email Me : </span>
                 <a href="mailto:sydandreasen@abbnebraska.com">
                   sydandreasen@abbnebraska.com
                 </a>
               </p>
-              <br />
               <p>
-                <span>Call or Text Me : </span>
+                <PhoneIcon style={{ verticalAlign: "middle" }} />
+                <span> Call or Text Me : </span>
                 <a href="tel:4022370162">402-237-0162</a>
               </p>
             </div>
@@ -180,14 +185,15 @@ export const About = (props) => {
           <StyleRoot>
             <div style={animations.fadeInRight}>
               <p>
-                <span>LinkedIn Profile : </span>
+                <LinkedInIcon style={{ verticalAlign: "middle" }} />
+                <span> LinkedIn Profile : </span>
                 <a href="https://www.linkedin.com/in/sydney-a/" target="_blank">
                   sydney-a
                 </a>
               </p>
-              <br />
               <p>
-                <span>Facebook Profile : </span>
+                <FacebookIcon style={{ verticalAlign: "middle" }} />
+                <span> Facebook Profile : </span>
                 <a
                   href="https://www.facebook.com/sydney.andreasen"
                   target="_blank"
