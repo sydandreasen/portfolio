@@ -4,14 +4,14 @@ import {
   fadeInLeft,
   fadeInRight,
   fadeInDown,
-  fadeInBottom,
+  fadeInUp,
   fadeIn,
   pulse,
 } from "react-animations";
 import Radium, { StyleRoot } from "radium";
 
 export const Nav = (props) => {
-  const pages = ["About", "Projects", "Contact"];
+  const pages = ["About", "Projects"];
   let currentTab = pages.indexOf(props.page);
 
   // setup animation styles
@@ -32,9 +32,9 @@ export const Nav = (props) => {
       animation: "1s",
       animationName: Radium.keyframes(fadeInDown, "fadeInDown"),
     },
-    fadeInBottom: {
+    fadeInUp: {
       animation: "1s",
-      animationName: Radium.keyframes(fadeInBottom, "fadeInBottom"),
+      animationName: Radium.keyframes(fadeInUp, "fadeInUp"),
     },
     pulse: {
       animationDelay: "0.7s",
@@ -54,7 +54,6 @@ export const Nav = (props) => {
           >
             <Tab label={"About"} className="nav-tab" />
             <Tab label={"Projects"} className="nav-tab" />
-            <Tab label={"Contact"} className="nav-tab" />
           </Tabs>
         </AppBar>
       </div>

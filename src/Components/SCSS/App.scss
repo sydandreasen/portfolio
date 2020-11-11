@@ -64,7 +64,16 @@ $dblue: #29648a;
       flex-wrap: wrap;
       justify-content: space-between;
       width: 67%;
-      min-width: 250;
+      min-width: 250px;
+      margin: auto;
+    }
+
+    .half-column {
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 50%;
+      min-width: 237px;
       margin: auto;
     }
 
@@ -95,11 +104,25 @@ $dblue: #29648a;
       width: 67%;
       border: 4px $dblue solid;
       box-shadow: $lblue 4px 6px 4px;
+      margin-bottom: 10px;
 
       .skill-pic {
         padding: 1%;
         width: 3%;
         min-width: 30px;
+      }
+    }
+
+    .contacts {
+      margin: 4% auto;
+
+      .half-column {
+        // overwrite generic .half-column
+        justify-content: center;
+        text-align: left;
+        a {
+          color: $shell;
+        }
       }
     }
   }

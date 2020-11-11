@@ -1,6 +1,13 @@
 import React from "react";
 import Tooltip from "@material-ui/core/Tooltip";
-import { fadeInLeft, fadeInRight, fadeIn, pulse } from "react-animations";
+import {
+  fadeInLeft,
+  fadeInRight,
+  fadeInDown,
+  fadeInUp,
+  fadeIn,
+  pulse,
+} from "react-animations";
 import Radium, { StyleRoot } from "radium";
 import profPic from "../../Images/PP_ProfilePic.JPG";
 import matlab from "../../Images/matlab.png";
@@ -28,8 +35,16 @@ export const About = (props) => {
       animationName: Radium.keyframes(fadeInRight, "fadeInRight"),
     },
     fadeIn: {
-      animation: "1.3s",
+      animation: "1s",
       animationName: Radium.keyframes(fadeIn, "fadeIn"),
+    },
+    fadeInDown: {
+      animation: "1s",
+      animationName: Radium.keyframes(fadeInDown, "fadeInDown"),
+    },
+    fadeInUp: {
+      animation: "1s",
+      animationName: Radium.keyframes(fadeInUp, "fadeInUp"),
     },
     pulse: {
       animationDelay: "0.7s",
@@ -135,6 +150,55 @@ export const About = (props) => {
           </div>
         </div>
       </StyleRoot>
+      <br />
+      <div className="row">
+        <StyleRoot>
+          <h1 style={[animations.fadeIn, animations.pulse]}>Contact Sydney</h1>
+        </StyleRoot>
+      </div>
+      <div className="row contacts">
+        <div className="half-column">
+          <StyleRoot>
+            {/* TODO : add icons and links */}
+            <div style={animations.fadeInLeft}>
+              <p>
+                <span>Email Me : </span>
+                <a href="mailto:sydandreasen@abbnebraska.com">
+                  sydandreasen@abbnebraska.com
+                </a>
+              </p>
+              <br />
+              <p>
+                <span>Call or Text Me : </span>
+                <a href="tel:4022370162">402-237-0162</a>
+              </p>
+            </div>
+          </StyleRoot>
+        </div>
+
+        <div className="half-column">
+          <StyleRoot>
+            <div style={animations.fadeInRight}>
+              <p>
+                <span>LinkedIn Profile : </span>
+                <a href="https://www.linkedin.com/in/sydney-a/" target="_blank">
+                  sydney-a
+                </a>
+              </p>
+              <br />
+              <p>
+                <span>Facebook Profile : </span>
+                <a
+                  href="https://www.facebook.com/sydney.andreasen"
+                  target="_blank"
+                >
+                  sydney.andreasen
+                </a>
+              </p>
+            </div>
+          </StyleRoot>
+        </div>
+      </div>
     </div>
   );
 };
