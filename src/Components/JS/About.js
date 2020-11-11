@@ -1,4 +1,5 @@
 import React from "react";
+import Tooltip from "@material-ui/core/Tooltip";
 import profPic from "../../Images/PP_ProfilePic.JPG";
 import matlab from "../../Images/matlab.png";
 import html from "../../Images/html.png";
@@ -60,18 +61,42 @@ export const About = (props) => {
           <h3>{`<Skills/>`}</h3>
         </div>
         <div className="row">
-          <img className="skill-pic" alt="html" src={html} />
-          <img className="skill-pic" alt="css" src={css} />
-          <img className="skill-pic" alt="js" src={js} />
-          <img className="skill-pic" alt="react" src={react} />
-          <img className="skill-pic" alt="c sharp" src={Csharp} />
-          <img className="skill-pic" alt="unity" src={unity} />
-          <img className="skill-pic" alt="sql" src={sql} />
-          <img className="skill-pic" alt="matlab" src={matlab} />
-          <img className="skill-pic" alt="java" src={java} />
-          <img className="skill-pic" alt="c" src={c} />
-          <img className="skill-pic" alt="vscode" src={vscode} />
-          <img className="skill-pic" alt="git" src={git} />
+          <Tooltip arrow title="HTML">
+            <img className="skill-pic" alt="html" src={html} />
+          </Tooltip>
+          <Tooltip arrow title="CSS">
+            <img className="skill-pic" alt="css" src={css} />
+          </Tooltip>
+          <Tooltip arrow title="JS">
+            <img className="skill-pic" alt="js" src={js} />
+          </Tooltip>
+          <Tooltip arrow title="React">
+            <img className="skill-pic" alt="react" src={react} />
+          </Tooltip>
+          <Tooltip arrow title="C#">
+            <img className="skill-pic" alt="c sharp" src={Csharp} />
+          </Tooltip>
+          <Tooltip arrow title="Unity">
+            <img className="skill-pic" alt="unity" src={unity} />
+          </Tooltip>
+          <Tooltip arrow title="SQL and SSMS">
+            <img className="skill-pic" alt="sql" src={sql} />
+          </Tooltip>
+          <Tooltip arrow title="MATLAB">
+            <img className="skill-pic" alt="matlab" src={matlab} />
+          </Tooltip>
+          <Tooltip arrow title="Java">
+            <img className="skill-pic" alt="java" src={java} />
+          </Tooltip>
+          <Tooltip arrow title="C">
+            <img className="skill-pic" alt="c" src={c} />
+          </Tooltip>
+          <Tooltip arrow title="VS Code">
+            <img className="skill-pic" alt="vscode" src={vscode} />
+          </Tooltip>
+          <Tooltip arrow title="Git and GitHub">
+            <img className="skill-pic" alt="git" src={git} />
+          </Tooltip>
         </div>
       </div>
     </div>
