@@ -7,6 +7,7 @@ import "./Components/SCSS/App.scss";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import IconButton from "@material-ui/core/IconButton";
 
 function App() {
   const [page, setPage] = useState("About");
@@ -30,12 +31,23 @@ function App() {
       <footer>
         <div className="row">
           <h5>Sydney Andreasen</h5>
-          <LinkedInIcon // TODO add link
-          />
-          <FacebookIcon // TODO add link
-          />
-          <TwitterIcon // TODO add link
-          />
+          <IconButton
+            onClick={() => window.open("https://www.linkedin.com/in/sydney-a/")}
+          >
+            <LinkedInIcon />
+          </IconButton>
+          <IconButton
+            onClick={() =>
+              window.open("https://www.facebook.com/sydney.andreasen/")
+            }
+          >
+            <FacebookIcon />
+          </IconButton>
+          <IconButton
+            onClick={() => window.open("https://twitter.com/andreasensydney")}
+          >
+            <TwitterIcon />
+          </IconButton>
         </div>
       </footer>
     </div>
