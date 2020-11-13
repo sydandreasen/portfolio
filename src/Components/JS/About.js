@@ -23,6 +23,8 @@ import js from "../../Images/Tech/js.png";
 import react from "../../Images/Tech/react.png";
 import c from "../../Images/Tech/c.png";
 import sql from "../../Images/Tech/sql.png";
+import firebase from "../../Images/Tech/firebase.png";
+import nosql from "../../Images/Tech/nosql.png";
 import vscode from "../../Images/Tech/vscode.png";
 import git from "../../Images/Tech/git.png";
 import unity from "../../Images/Tech/unity.png";
@@ -92,10 +94,11 @@ export const About = (props) => {
                 all time: Friends.
               </p>
               <p>
-                Currently, I am loving to code in React in my free time. In my
-                research work at the UNO Biomechanics Research Building, my
-                favorite projects that I am involved in are virtual reality
-                projects, where I create environments with Unity and C#.
+                Currently, I am loving to code in React in my free time. I'd be
+                really interested in learning about Angular or .NET with C#
+                next. In my research work at the UNO Biomechanics Research
+                Building, my favorite projects that I am involved in are virtual
+                reality projects, where I create environments with Unity and C#.
               </p>
               <p>
                 In the future, I would love to be a Software Engineer for a
@@ -143,6 +146,12 @@ export const About = (props) => {
               </Tooltip>
               <Tooltip arrow title="C">
                 <img className="skill-pic" alt="c" src={c} />
+              </Tooltip>
+              <Tooltip arrow title="Firebase">
+                <img className="skill-pic" alt="firebase" src={firebase} />
+              </Tooltip>
+              <Tooltip arrow title="NoSQL">
+                <img className="skill-pic" alt="nosql" src={nosql} />
               </Tooltip>
               <Tooltip arrow title="VS Code">
                 <img className="skill-pic" alt="vscode" src={vscode} />
