@@ -72,9 +72,10 @@ $dblue: #29648a;
       display: inline-flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      width: 50%;
+      width: 48%;
       min-width: 237px;
       margin: auto;
+      padding: 0 1%;
     }
 
     .profile-pic {
@@ -129,6 +130,42 @@ $dblue: #29648a;
           margin-top: 1.5%;
         }
       }
+    }
+  }
+
+  .tech {
+    width: 45px;
+    height: 45px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .MuiCard-root {
+    max-width: 47%;
+    min-width: 400px;
+    border-radius: 1vw;
+    border: 4px $dblue solid;
+    box-shadow: $lblue 4px 6px 4px;
+    margin: 1%;
+    background-color: $shell;
+
+    .MuiCardContent-root {
+      h1 {
+        font-size: calc(12px + 0.7vw);
+      }
+
+      p {
+        font-size: calc(9px + 0.5vw);
+      }
+    }
+
+    .MuiCardMedia-img {
+      max-width: 90%;
+      margin: 10px auto;
+      border-radius: 1vw;
+      border: 2px $dblue solid;
+      box-shadow: $lblue 2px 4px 2px;
     }
   }
 

@@ -14,18 +14,18 @@ import {
 } from "react-animations";
 import Radium, { StyleRoot } from "radium";
 import profPic from "../../Images/PP_ProfilePic.JPG";
-import matlab from "../../Images/matlab.png";
-import html from "../../Images/html.png";
-import java from "../../Images/java.png";
-import Csharp from "../../Images/Csharp.png";
-import css from "../../Images/css.png";
-import js from "../../Images/js.png";
-import react from "../../Images/react.png";
-import c from "../../Images/c.png";
-import sql from "../../Images/sql.png";
-import vscode from "../../Images/vscode.png";
-import git from "../../Images/git.png";
-import unity from "../../Images/unity.png";
+import matlab from "../../Images/Tech/matlab.png";
+import html from "../../Images/Tech/html.png";
+import java from "../../Images/Tech/java.png";
+import Csharp from "../../Images/Tech/Csharp.png";
+import css from "../../Images/Tech/css.png";
+import js from "../../Images/Tech/js.png";
+import react from "../../Images/Tech/react.png";
+import c from "../../Images/Tech/c.png";
+import sql from "../../Images/Tech/sql.png";
+import vscode from "../../Images/Tech/vscode.png";
+import git from "../../Images/Tech/git.png";
+import unity from "../../Images/Tech/unity.png";
 
 export const About = (props) => {
   // setup animation styles
@@ -51,7 +51,7 @@ export const About = (props) => {
       animationName: Radium.keyframes(fadeInUp, "fadeInUp"),
     },
     pulse: {
-      animationDelay: "0.7s",
+      animationDelay: "0.3s",
       animation: "1s",
       animationName: Radium.keyframes(pulse, "pulse"),
     },
@@ -163,7 +163,6 @@ export const About = (props) => {
       <div className="row contacts">
         <div className="half-column">
           <StyleRoot>
-            {/* TODO : add icons and links */}
             <div style={animations.fadeInLeft}>
               <p>
                 <EmailIcon style={{ verticalAlign: "middle" }} />
@@ -187,17 +186,12 @@ export const About = (props) => {
               <p>
                 <LinkedInIcon style={{ verticalAlign: "middle" }} />
                 <span> LinkedIn Profile : </span>
-                <a href="https://www.linkedin.com/in/sydney-a/" target="_blank">
-                  sydney-a
-                </a>
+                <a href="https://www.linkedin.com/in/sydney-a/">sydney-a</a>
               </p>
               <p>
                 <FacebookIcon style={{ verticalAlign: "middle" }} />
                 <span> Facebook Profile : </span>
-                <a
-                  href="https://www.facebook.com/sydney.andreasen"
-                  target="_blank"
-                >
+                <a href="https://www.facebook.com/sydney.andreasen">
                   sydney.andreasen
                 </a>
               </p>
