@@ -1,7 +1,7 @@
 import React from "react";
 import Tooltip from "@material-ui/core/Tooltip";
 import Card from "@material-ui/core/Card";
-import CardMedia from "@material-ui/core/CardMedia";
+import { Gallery } from "./Gallery.js";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
 import IconButton from "@material-ui/core/IconButton";
@@ -9,8 +9,7 @@ import IconButton from "@material-ui/core/IconButton";
 export const Project = (props) => {
   return (
     <Card className="project">
-      {/* TODO : create gallery of images */}
-      <CardMedia component="img" image={props.project.images[0]} />
+      <Gallery images={props.project.images} />
       <CardContent>
         <h2>{props.project.title}</h2>
         <br />

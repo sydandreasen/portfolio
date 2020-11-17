@@ -24,6 +24,10 @@ import edamam from "../../Images/Tech/edamam.png";
 import mp1 from "../../Images/DemoPics/MealPlanner/mealplanner-1.png";
 import rps1 from "../../Images/DemoPics/RPS/RPS-1.png";
 import oph from "../../Images/DemoPics/OldPortfolio/oldPortfolio_home.png";
+import opa from "../../Images/DemoPics/OldPortfolio/oldPortfolio_about.png";
+import opp from "../../Images/DemoPics/OldPortfolio/oldPortfolio_projects.png";
+import opi from "../../Images/DemoPics/OldPortfolio/oldPortfolio_internship.png";
+import opr from "../../Images/DemoPics/OldPortfolio/oldPortfolio_research.png";
 
 export const Projects = (props) => {
   // setup animation styles
@@ -123,6 +127,10 @@ export const Projects = (props) => {
       images: [
         // import images at top and put variable names in here
         oph,
+        opa,
+        opp,
+        opi,
+        opr,
       ],
       stack: [
         { img: html, title: "HTML5" },
