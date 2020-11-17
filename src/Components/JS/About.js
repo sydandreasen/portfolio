@@ -4,14 +4,7 @@ import EmailIcon from "@material-ui/icons/Email";
 import PhoneIcon from "@material-ui/icons/Phone";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import FacebookIcon from "@material-ui/icons/Facebook";
-import {
-  fadeInLeft,
-  fadeInRight,
-  fadeInDown,
-  fadeInUp,
-  fadeIn,
-  pulse,
-} from "react-animations";
+import { fadeIn } from "react-animations";
 import Radium, { StyleRoot } from "radium";
 import profPic from "../../Images/PP_ProfilePic.JPG";
 import matlab from "../../Images/Tech/matlab.png";
@@ -32,30 +25,9 @@ import unity from "../../Images/Tech/unity.png";
 export const About = (props) => {
   // setup animation styles
   const animations = {
-    fadeInLeft: {
-      animation: "1s",
-      animationName: Radium.keyframes(fadeInLeft, "fadeInLeft"),
-    },
-    fadeInRight: {
-      animation: "1s",
-      animationName: Radium.keyframes(fadeInRight, "fadeInRight"),
-    },
     fadeIn: {
-      animation: "1s",
+      animation: "2s",
       animationName: Radium.keyframes(fadeIn, "fadeIn"),
-    },
-    fadeInDown: {
-      animation: "1s",
-      animationName: Radium.keyframes(fadeInDown, "fadeInDown"),
-    },
-    fadeInUp: {
-      animation: "1s",
-      animationName: Radium.keyframes(fadeInUp, "fadeInUp"),
-    },
-    pulse: {
-      animationDelay: "0.3s",
-      animation: "1s",
-      animationName: Radium.keyframes(pulse, "pulse"),
     },
   };
 
@@ -63,15 +35,15 @@ export const About = (props) => {
     <div className="page">
       <div className="row">
         <StyleRoot>
-          <h1 style={[animations.fadeIn, animations.pulse]}>Who is Sydney?</h1>
+          <h1 style={animations.fadeIn}>Who is Sydney?</h1>
         </StyleRoot>
       </div>
       <br />
       <div className="row">
-        <div className="onethird-column">
+        <div className="onethird-column pulse-hover">
           <StyleRoot>
             <img
-              style={animations.fadeInLeft}
+              style={animations.fadeIn}
               className="profile-pic"
               alt="profile pic"
               src={profPic}
@@ -79,9 +51,9 @@ export const About = (props) => {
             />
           </StyleRoot>
         </div>
-        <div className="twothirds-column text">
+        <div className="twothirds-column text pulse-hover">
           <StyleRoot>
-            <div style={animations.fadeInRight}>
+            <div style={animations.fadeIn}>
               <h4>Hello, it is a pleasure to e-meet you!</h4>
               <p>
                 I am a Computer Science student at UNO. I will be graduating
@@ -111,7 +83,7 @@ export const About = (props) => {
       </div>
       <br />
       <StyleRoot>
-        <div style={[animations.fadeIn, animations.pulse]}>
+        <div style={animations.fadeIn} className="pulse-hover">
           <div className="row skills">
             <div className="row">
               <h3>{`<Skills/>`}</h3>
@@ -159,6 +131,7 @@ export const About = (props) => {
               <Tooltip arrow title="Git and GitHub">
                 <img className="skill-pic" alt="git" src={git} />
               </Tooltip>
+              {/* TODO : add adobe xd and compress this section with an array of objects variable and mapping that */}
             </div>
           </div>
         </div>
@@ -166,13 +139,13 @@ export const About = (props) => {
       <br />
       <div className="row">
         <StyleRoot>
-          <h1 style={[animations.fadeIn, animations.pulse]}>Contact Sydney</h1>
+          <h1 style={animations.fadeIn}>Contact Sydney</h1>
         </StyleRoot>
       </div>
       <div className="row contacts">
         <div className="half-column">
           <StyleRoot>
-            <div style={animations.fadeInLeft}>
+            <div style={animations.fadeIn} className="pulse-hover">
               <p>
                 <EmailIcon style={{ verticalAlign: "middle" }} />
                 <span> Email Me : </span>
@@ -191,7 +164,7 @@ export const About = (props) => {
 
         <div className="half-column">
           <StyleRoot>
-            <div style={animations.fadeInRight}>
+            <div style={animations.fadeIn} className="pulse-hover">
               <p>
                 <LinkedInIcon style={{ verticalAlign: "middle" }} />
                 <span> LinkedIn Profile : </span>

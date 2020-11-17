@@ -2,14 +2,7 @@ import React from "react";
 import { Project } from "./Project.js";
 
 // import animations
-import {
-  fadeInLeft,
-  fadeInRight,
-  fadeInDown,
-  fadeInUp,
-  fadeIn,
-  pulse,
-} from "react-animations";
+import { fadeIn } from "react-animations";
 import Radium, { StyleRoot } from "radium";
 
 // import action icons
@@ -35,30 +28,9 @@ import oph from "../../Images/DemoPics/OldPortfolio/oldPortfolio_home.png";
 export const Projects = (props) => {
   // setup animation styles
   const animations = {
-    fadeInLeft: {
-      animation: "1s",
-      animationName: Radium.keyframes(fadeInLeft, "fadeInLeft"),
-    },
-    fadeInRight: {
-      animation: "1s",
-      animationName: Radium.keyframes(fadeInRight, "fadeInRight"),
-    },
     fadeIn: {
-      animation: "1.4s",
+      animation: "2s",
       animationName: Radium.keyframes(fadeIn, "fadeIn"),
-    },
-    fadeInDown: {
-      animation: "1s",
-      animationName: Radium.keyframes(fadeInDown, "fadeInDown"),
-    },
-    fadeInUp: {
-      animation: "1s",
-      animationName: Radium.keyframes(fadeInUp, "fadeInUp"),
-    },
-    pulse: {
-      animationDelay: "0.3s",
-      animation: "1s",
-      animationName: Radium.keyframes(pulse, "pulse"),
     },
   };
 
@@ -191,7 +163,7 @@ export const Projects = (props) => {
       </div>
       <br />
       <StyleRoot>
-        <div className="row" style={animations.fadeIn}>
+        <div className="row pulse-hover" style={animations.fadeIn}>
           {projects.map((project) => (
             <Project key={project.title} project={project} />
           ))}

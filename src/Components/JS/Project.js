@@ -8,7 +8,7 @@ import IconButton from "@material-ui/core/IconButton";
 
 export const Project = (props) => {
   return (
-    <Card>
+    <Card className="project">
       {/* TODO : create gallery of images */}
       <CardMedia component="img" image={props.project.images[0]} />
       <CardContent>

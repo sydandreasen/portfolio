@@ -1,13 +1,6 @@
 import React from "react";
 import { Tabs, Tab, AppBar } from "@material-ui/core";
-import {
-  fadeInLeft,
-  fadeInRight,
-  fadeInDown,
-  fadeInUp,
-  fadeIn,
-  pulse,
-} from "react-animations";
+import { fadeInDown } from "react-animations";
 import Radium, { StyleRoot } from "radium";
 
 export const Nav = (props) => {
@@ -16,30 +9,9 @@ export const Nav = (props) => {
 
   // setup animation styles
   const animations = {
-    fadeInLeft: {
-      animation: "1s",
-      animationName: Radium.keyframes(fadeInLeft, "fadeInLeft"),
-    },
-    fadeInRight: {
-      animation: "1s",
-      animationName: Radium.keyframes(fadeInRight, "fadeInRight"),
-    },
-    fadeIn: {
-      animation: "1s",
-      animationName: Radium.keyframes(fadeIn, "fadeIn"),
-    },
     fadeInDown: {
       animation: "1s",
       animationName: Radium.keyframes(fadeInDown, "fadeInDown"),
-    },
-    fadeInUp: {
-      animation: "1s",
-      animationName: Radium.keyframes(fadeInUp, "fadeInUp"),
-    },
-    pulse: {
-      animationDelay: "0.7s",
-      animation: "1s",
-      animationName: Radium.keyframes(pulse, "pulse"),
     },
   };
 
