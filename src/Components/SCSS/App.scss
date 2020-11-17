@@ -185,18 +185,21 @@ $dblue: #29648a;
       box-shadow: $lblue 2px 4px 2px;
     }
 
-    .arrow {
-      // position: absolute;
-      // z-index: 1;
+    .MuiCardMedia-root {
+      position: relative;
+      .arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 100;
+      }
+
+      .arrow-left {
+        left: 8%;
+      }
+      .arrow-right {
+        right: 8%;
+      }
     }
-
-    // .arrow-left {
-    //   float: left;
-    // }
-
-    // .arrow-right {
-    //   float: right;
-    // }
   }
 
   footer {

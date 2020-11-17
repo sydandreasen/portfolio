@@ -15,6 +15,7 @@ export const Gallery = (props) => {
     <div className="MuiCardMedia-root MuiCardMedia-media">
       {images.length > 1 ? (
         <IconButton
+          className="arrow arrow-left"
           onClick={() => {
             if (currentImg.idx === 0) {
               setCurrentImg({
@@ -29,8 +30,7 @@ export const Gallery = (props) => {
             }
           }}
         >
-          {/* TODO : styling of arrows */}
-          <ArrowBackIosIcon className="arrow arrow-left" />
+          <ArrowBackIosIcon />
         </IconButton>
       ) : (
         ""
@@ -38,6 +38,7 @@ export const Gallery = (props) => {
       <img src={currentImg.img} alt="project" className="MuiCardMedia-img" />
       {images.length > 1 ? (
         <IconButton
+          className="arrow arrow-right"
           onClick={() => {
             if (currentImg.idx === images.length - 1) {
               setCurrentImg({ img: images[0], idx: 0 });
@@ -49,7 +50,7 @@ export const Gallery = (props) => {
             }
           }}
         >
-          <ArrowForwardIosIcon className="arrow arrow-right" />
+          <ArrowForwardIosIcon />
         </IconButton>
       ) : (
         ""
