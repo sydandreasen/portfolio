@@ -75,7 +75,7 @@ export const Projects = (props) => {
         {
           icon: <KeyboardArrowRightIcon />,
           title: "See More Info",
-          link: () => console.log("flip to back side to see info"), // TODO : back of card
+          // link: () => console.log("flip to back side to see info"), // TODO : back of card
         },
       ],
       info:
@@ -115,7 +115,7 @@ export const Projects = (props) => {
         {
           icon: <KeyboardArrowRightIcon />,
           title: "See More Info",
-          link: () => console.log("flip to back side to see info"), // TODO : back of card
+          // link: () => console.log("flip to back side to see info"), // TODO : back of card
         },
       ],
       info: "...",
@@ -157,7 +157,7 @@ export const Projects = (props) => {
         {
           icon: <KeyboardArrowRightIcon />,
           title: "See More Info",
-          link: () => console.log("flip to back side to see info"), // TODO : back of card
+          // link: () => console.log("flip to back side to see info"), // TODO : back of card
         },
       ],
       info: "...",
