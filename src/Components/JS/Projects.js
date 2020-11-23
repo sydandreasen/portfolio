@@ -1,5 +1,6 @@
 import React from "react";
 import { Project } from "./Project.js";
+import CardContent from "@material-ui/core/CardContent";
 
 // import animations
 import { fadeIn } from "react-animations";
@@ -43,7 +44,7 @@ export const Projects = (props) => {
       title: "Meal Planner",
       description: "plan meals in daily, weekly, or monthly perspective",
       images: [
-        // import images at top and put variable names in here
+        // TODO : import images at top and put variable names in here
         mp1,
       ],
       stack: [
@@ -75,17 +76,44 @@ export const Projects = (props) => {
         {
           icon: <KeyboardArrowRightIcon />,
           title: "See More Info",
-          // link: () => console.log("flip to back side to see info"), // TODO : back of card
         },
       ],
-      info:
-        "Framework: React.js; Top Library Used: Ant Design; API : Edamam...",
+      back: (
+        <CardContent>
+          <h3>Meal Planner</h3>
+          <br />
+          <h4>Stack</h4>
+          <ul>
+            <li>React.js, JS, SCSS</li>
+            <li>Ant Design Library - building blocks for various components</li>
+            <li>
+              Edamam API - free subscription - search foods with natural
+              language and find nutrition information
+            </li>
+            <li>
+              Google Firebase - hosting, authentication, NoSQL real-time
+              database
+            </li>
+          </ul>
+          <br />
+          <h4>Basic Features</h4>
+          <ul>
+            <li>Plan foods in monthly, weekly, or daily view</li>
+            <li>Compare daily plans to daily nutritional goals</li>
+            <li>Personalize meal settings and nutritional goal settings</li>
+            <li>
+              Plus so many features I'd love to add with a paid API subscription
+              (check the GitHub README for more on this!)
+            </li>
+          </ul>
+        </CardContent>
+      ),
     },
     {
       title: "Rock Paper Scissors",
       description: "play RPS and see current stats by play choice",
       images: [
-        // import images at top and put variable names in here
+        // TODO : import images at top and put variable names in here
         rps1,
       ],
       stack: [
@@ -115,10 +143,30 @@ export const Projects = (props) => {
         {
           icon: <KeyboardArrowRightIcon />,
           title: "See More Info",
-          // link: () => console.log("flip to back side to see info"), // TODO : back of card
         },
       ],
-      info: "...",
+      back: (
+        <CardContent>
+          <h3>Rock Paper Scissors</h3>
+          <br />
+          <h4>Stack</h4>
+          <ul>
+            <li>HTML - the content</li>
+            <li>JS - DOM manipulation according to score</li>
+            <li>CSS - styling and animation</li>
+          </ul>
+          <br />
+          <h4>Basic Features</h4>
+          <ul>
+            <li>Play RPS against computer (random number generator)</li>
+            <li>See score change over multiple plays</li>
+            <li>
+              See live stats that adjust according to how well you perform for
+              each choice: rock, paper, and scissors
+            </li>
+          </ul>
+        </CardContent>
+      ),
     },
     {
       title: "Original Portfolio",
@@ -157,10 +205,30 @@ export const Projects = (props) => {
         {
           icon: <KeyboardArrowRightIcon />,
           title: "See More Info",
-          // link: () => console.log("flip to back side to see info"), // TODO : back of card
         },
       ],
-      info: "...",
+      back: (
+        <CardContent>
+          <h3>Original Portfolio</h3>
+          <br />
+          <h4>Stack</h4>
+          <ul>
+            <li>HTML - the content</li>
+            <li>JS - animations via ScrollMagic</li>
+            <li>CSS - styling and animation</li>
+          </ul>
+          <br />
+          <h4>Basic Features</h4>
+          <ul>
+            <li>Resume Download</li>
+            <li>About Me</li>
+            <li>Contact Info</li>
+            <li>Project Descriptions and Links</li>
+            <li>Recap of PayPal Internship</li>
+            <li>Summaries of Biomechanics Research</li>
+          </ul>
+        </CardContent>
+      ),
     },
   ];
 

@@ -15,15 +15,8 @@ export const Project = (props) => {
   const [side, setSide] = useState("");
 
   return side === "back" ? (
-    <Card className={side}>
-      <CardContent>
-        {/* TODO : replace this with different content on tech stack, use of each component, and basic project features, and wishlist items */}
-        <h4>{props.project.title}</h4>
-        <br />
-        <p>
-          <i>{props.project.description}</i>
-        </p>
-      </CardContent>
+    <Card className={`project ${side}`}>
+      {props.project.back}
       <CardActions>
         <div className="row">
           {/* TODO : restyle icon location */}
@@ -39,7 +32,7 @@ export const Project = (props) => {
     <Card className={side}>
       <Gallery images={props.project.images} />
       <CardContent>
-        <h2>{props.project.title}</h2>
+        <h3>{props.project.title}</h3>
         <br />
         <p>
           <i>{props.project.description}</i>

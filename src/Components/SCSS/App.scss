@@ -10,12 +10,12 @@ $lblue: #2e9cca;
 $dblue: #29648a;
 
 @keyframes pulse {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.025);
-  }
+  // from {
+  //   transform: scale(1);
+  // }
+  // to {
+  //   transform: scale(1.025);
+  // }
 }
 
 * {
@@ -168,12 +168,12 @@ $dblue: #29648a;
     background-color: $shell;
 
     .MuiCardContent-root {
-      h1 {
-        font-size: calc(12px + 0.7vw);
+      h3 {
+        font-size: calc(9px + 0.5vw);
       }
 
       p {
-        font-size: calc(9px + 0.5vw);
+        font-size: calc(7px + 0.4vw);
       }
     }
 
@@ -212,6 +212,31 @@ $dblue: #29648a;
 .back {
   // back of card to show
   // TODO : figure out how to animate this
+  text-align: left;
+  h3 {
+    font-size: calc(9px + 0.5vw);
+  }
+  h4 {
+    font-size: calc(8px + 0.5vw);
+  }
+  ul {
+    padding-left: 4%;
+    font-size: calc(7px + 0.4vw);
+  }
+  p {
+    font-size: calc(7px + 0.4vw);
+  }
+
+  .MuiCardActions-root {
+    position: relative;
+    min-height: 40px;
+
+    .MuiButtonBase-root {
+      position: absolute;
+      left: 8%;
+      top: -1%;
+    }
+  }
 }
 
 .front {
