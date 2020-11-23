@@ -10,6 +10,7 @@ $lblue: #2e9cca;
 $dblue: #29648a;
 
 @keyframes pulse {
+  // TODO : turn this back on and make cohesive with turning card animation
   // from {
   //   transform: scale(1);
   // }
@@ -209,37 +210,50 @@ $dblue: #29648a;
   }
 }
 
-.back {
-  // back of card to show
-  // TODO : figure out how to animate this
-  text-align: left;
-  h3 {
-    font-size: calc(9px + 0.5vw);
+.projects {
+  align-items: flex-start;
+  .project {
+    flex: 1 auto;
   }
-  h4 {
-    font-size: calc(8px + 0.5vw);
-  }
-  ul {
-    padding-left: 4%;
-    font-size: calc(7px + 0.4vw);
-  }
-  p {
-    font-size: calc(7px + 0.4vw);
-  }
-
-  .MuiCardActions-root {
-    position: relative;
-    min-height: 40px;
-
-    .MuiButtonBase-root {
-      position: absolute;
-      left: 8%;
-      top: -1%;
+  .skills-and-links-row {
+    .MuiCardActions-root {
+      padding: 0;
+      margin: 0;
     }
   }
-}
 
-.front {
-  // to flip back to front of project card
-  // TODO : figure out how to animate this
+  .back {
+    // back of card to show
+    // TODO : figure out how to animate this
+    text-align: left;
+    h3 {
+      font-size: calc(9px + 0.5vw);
+    }
+    h4 {
+      font-size: calc(8px + 0.5vw);
+    }
+    ul {
+      padding-left: 4%;
+      font-size: calc(7px + 0.4vw);
+    }
+    p {
+      font-size: calc(7px + 0.4vw);
+    }
+
+    .MuiCardActions-root {
+      position: relative;
+      min-height: 40px;
+
+      .MuiButtonBase-root {
+        position: absolute;
+        left: 8%;
+        top: -1%;
+      }
+    }
+  }
+
+  .front {
+    // to flip back to front of project card
+    // TODO : figure out how to animate this
+  }
 }

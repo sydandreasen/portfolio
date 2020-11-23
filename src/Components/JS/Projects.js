@@ -239,7 +239,7 @@ export const Projects = (props) => {
       </div>
       <br />
       <StyleRoot>
-        <div className="row pulse-hover" style={animations.fadeIn}>
+        <div className="row pulse-hover projects" style={animations.fadeIn}>
           {projects.map((project) => (
             <Project key={project.title} project={project} />
           ))}

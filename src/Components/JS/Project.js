@@ -4,6 +4,7 @@ import Card from "@material-ui/core/Card";
 import { Gallery } from "./Gallery.js";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
+import { spacing } from "@material-ui/system";
 import IconButton from "@material-ui/core/IconButton";
 import KeyboardArrowLeftIcon from "@material-ui/icons/KeyboardArrowLeft";
 
@@ -19,7 +20,6 @@ export const Project = (props) => {
       {props.project.back}
       <CardActions>
         <div className="row">
-          {/* TODO : restyle icon location */}
           <Tooltip arrow title={"Go Back"}>
             <IconButton onClick={() => setSide("front")}>
               <KeyboardArrowLeftIcon />
@@ -38,29 +38,32 @@ export const Project = (props) => {
           <i>{props.project.description}</i>
         </p>
       </CardContent>
-      <CardActions>
-        <div className="row">
-          {props.project.stack.map((tech) => (
-            <Tooltip arrow key={tech.title} title={tech.title}>
-              <IconButton className="tech">
-                <img src={tech.img} alt={tech.title} />
-              </IconButton>
-            </Tooltip>
-          ))}
-        </div>
-        {/* TODO : increase responsiveness between these two groupings */}
-        <div className="row">
-          {props.project.links.map((link) => (
-            <Tooltip arrow key={link.title} title={link.title}>
-              <IconButton
-                onClick={link.link ? link.link : () => setSide("back")}
-              >
-                {link.icon}
-              </IconButton>
-            </Tooltip>
-          ))}
-        </div>
-      </CardActions>
+      <div className="row skills-and-links-row">
+        <CardActions>
+          <div className="row">
+            {props.project.stack.map((tech) => (
+              <Tooltip arrow key={tech.title} title={tech.title}>
+                <IconButton className="tech">
+                  <img src={tech.img} alt={tech.title} />
+                </IconButton>
+              </Tooltip>
+            ))}
+          </div>
+        </CardActions>
+        <CardActions>
+          <div className="row">
+            {props.project.links.map((link) => (
+              <Tooltip arrow key={link.title} title={link.title}>
+                <IconButton
+                  onClick={link.link ? link.link : () => setSide("back")}
+                >
+                  {link.icon}
+                </IconButton>
+              </Tooltip>
+            ))}
+          </div>
+        </CardActions>
+      </div>
     </Card>
   );
 };
