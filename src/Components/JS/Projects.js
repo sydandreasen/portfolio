@@ -24,6 +24,8 @@ import edamam from "../../Images/Tech/edamam.png";
 // import all demo images
 import mp1 from "../../Images/DemoPics/MealPlanner/mealplanner-1.png";
 import rps1 from "../../Images/DemoPics/RPS/RPS-1.png";
+import rps2 from "../../Images/DemoPics/RPS/RPS-2.png";
+import rps3 from "../../Images/DemoPics/RPS/RPS-3.png";
 import oph from "../../Images/DemoPics/OldPortfolio/oldPortfolio_home.png";
 import opa from "../../Images/DemoPics/OldPortfolio/oldPortfolio_about.png";
 import opp from "../../Images/DemoPics/OldPortfolio/oldPortfolio_projects.png";
@@ -115,6 +117,8 @@ export const Projects = (props) => {
       images: [
         // TODO : import images at top and put variable names in here
         rps1,
+        rps2,
+        rps3,
       ],
       stack: [
         { img: html, title: "HTML5" },

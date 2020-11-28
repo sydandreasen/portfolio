@@ -243,17 +243,6 @@ body {
     p {
       font-size: calc(7px + 0.4vw);
     }
-
-    .MuiCardActions-root {
-      position: relative;
-      min-height: 40px;
-
-      .MuiButtonBase-root {
-        position: absolute;
-        left: 8%;
-        top: -1%;
-      }
-    }
   }
 
   .front {

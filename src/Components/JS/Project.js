@@ -4,7 +4,6 @@ import Card from "@material-ui/core/Card";
 import { Gallery } from "./Gallery.js";
 import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
-import { spacing } from "@material-ui/system";
 import IconButton from "@material-ui/core/IconButton";
 import KeyboardArrowLeftIcon from "@material-ui/icons/KeyboardArrowLeft";
 
@@ -16,19 +15,38 @@ export const Project = (props) => {
   const [side, setSide] = useState("");
 
   return side === "back" ? (
+    // back of card!
     <Card className={`project ${side}`}>
       {props.project.back}
-      <CardActions>
-        <div className="row">
-          <Tooltip arrow title={"Go Back"}>
-            <IconButton onClick={() => setSide("front")}>
-              <KeyboardArrowLeftIcon />
-            </IconButton>
-          </Tooltip>
-        </div>
-      </CardActions>
+      <div className="row skills-and-links-row">
+        <CardActions>
+          <div className="row">
+            {props.project.stack.map((tech) => (
+              <Tooltip arrow key={tech.title} title={tech.title}>
+                <IconButton className="tech">
+                  <img src={tech.img} alt={tech.title} />
+                </IconButton>
+              </Tooltip>
+            ))}
+          </div>
+        </CardActions>
+        <CardActions>
+          <div className="row">
+            {props.project.links.map((link) => (
+              <Tooltip arrow key={link.title} title={link.title}>
+                <IconButton
+                  onClick={link.link ? link.link : () => setSide("front")}
+                >
+                  {link.link ? link.icon : <KeyboardArrowLeftIcon />}
+                </IconButton>
+              </Tooltip>
+            ))}
+          </div>
+        </CardActions>
+      </div>
     </Card>
   ) : (
+    // front of card!
     <Card className={side}>
       <Gallery images={props.project.images} />
       <CardContent>
