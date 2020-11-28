@@ -25,6 +25,10 @@ $dblue: #29648a;
   margin: 0;
 }
 
+body {
+  height: 100vh;
+}
+
 .pulse-hover {
   :hover {
     animation-name: pulse;
@@ -35,7 +39,7 @@ $dblue: #29648a;
 
 .App {
   background-color: $purple;
-  height: 100vh;
+  height: 100%;
 
   .nav-wrapper {
     background-color: $dark;
