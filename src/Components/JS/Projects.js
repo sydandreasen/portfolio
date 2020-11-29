@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Project } from "./Project.js";
 import CardContent from "@material-ui/core/CardContent";
+import Modal from "@material-ui/core/Modal";
 
 // import animations
 import { fadeIn } from "react-animations";
@@ -32,7 +33,29 @@ import opp from "../../Images/DemoPics/OldPortfolio/oldPortfolio_projects.png";
 import opi from "../../Images/DemoPics/OldPortfolio/oldPortfolio_internship.png";
 import opr from "../../Images/DemoPics/OldPortfolio/oldPortfolio_research.png";
 
+// import demo videos
+import rockPaperScissors_1 from "../../Demos/RPS-1.mov";
+
 export const Projects = (props) => {
+  // show a single demo modal and which modal
+  const [showDemo, setShowDemo] = useState({ show: false, which: [] });
+  const [demoVid, setDemoVid] = useState(<p>no video</p>);
+  // set the content of the modal
+  useEffect(
+    () =>
+      setDemoVid(
+        <div>
+          <video width="100%" controls>
+            {showDemo.which.map((video, index) => (
+              <source src={video} key={index} />
+            ))}
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      ),
+    [showDemo]
+  );
+
   // setup animation styles
   const animations = {
     fadeIn: {
@@ -68,7 +91,7 @@ export const Projects = (props) => {
         {
           icon: <PlayCircleOutlineIcon />,
           title: "Watch a Demo Video",
-          link: () => console.log("opening demo video"), // embed on page in a modal style; TODO: make demo video
+          link: () => setShowDemo({ show: true, which: [] }), // embed on page in a modal style; TODO: make demo video
         },
         {
           icon: <OpenInNewIcon />,
@@ -114,12 +137,7 @@ export const Projects = (props) => {
     {
       title: "Rock Paper Scissors",
       description: "play RPS and see current stats by play choice",
-      images: [
-        // TODO : import images at top and put variable names in here
-        rps1,
-        rps2,
-        rps3,
-      ],
+      images: [rps1, rps2, rps3],
       stack: [
         { img: html, title: "HTML5" },
         { img: js, title: "JS" },
@@ -136,7 +154,7 @@ export const Projects = (props) => {
         {
           icon: <PlayCircleOutlineIcon />,
           title: "Watch a Demo Video",
-          link: () => console.log("opening demo video"), // embed on page in a modal style; TODO: make demo video
+          link: () => setShowDemo({ show: true, which: [rockPaperScissors_1] }), // embed on page in a modal style; TODO: make demo video
         },
         {
           icon: <OpenInNewIcon />,
@@ -197,11 +215,6 @@ export const Projects = (props) => {
           link: () => window.open("https://github.com/sydandreasen/Portfolio"),
         },
         {
-          icon: <PlayCircleOutlineIcon />,
-          title: "Watch a Demo Video",
-          link: () => console.log("opening demo video"), // embed on page in a modal style; TODO: make demo video
-        },
-        {
           icon: <OpenInNewIcon />,
           title: "Open Live Site",
           link: () => window.open("https://sydandreasen.github.io/Portfolio/"),
@@ -249,6 +262,22 @@ export const Projects = (props) => {
           ))}
         </div>
       </StyleRoot>
+      <Modal
+        style={{
+          position: "absolute",
+          zIndex: 100,
+          width: "45%",
+          height: "45%",
+          margin: "auto",
+          backgroundColor: "#aaabb8",
+          borderRadius: "4%",
+          padding: "2%",
+        }}
+        open={showDemo.show}
+        onClose={() => setShowDemo({ show: false, which: [] })}
+      >
+        {demoVid}
+      </Modal>
     </div>
   );
 };
