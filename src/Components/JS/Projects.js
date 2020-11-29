@@ -267,7 +267,7 @@ export const Projects = (props) => {
           position: "absolute",
           zIndex: 100,
           width: "45%",
-          height: "45%",
+          height: "max-content",
           margin: "auto",
           backgroundColor: "#aaabb8",
           borderRadius: "4%",
