@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio-react/static/css/main.46ba52ea.chunk.css",
-    "main.js": "/portfolio-react/static/js/main.08832b0a.chunk.js",
-    "main.js.map": "/portfolio-react/static/js/main.08832b0a.chunk.js.map",
+    "main.js": "/portfolio-react/static/js/main.fffdcf12.chunk.js",
+    "main.js.map": "/portfolio-react/static/js/main.fffdcf12.chunk.js.map",
     "runtime-main.js": "/portfolio-react/static/js/runtime-main.8cae13d3.js",
     "runtime-main.js.map": "/portfolio-react/static/js/runtime-main.8cae13d3.js.map",
     "static/js/2.3d6298dc.chunk.js": "/portfolio-react/static/js/2.3d6298dc.chunk.js",
@@ -18,6 +18,7 @@
     "static/media/RPS-1.96891f69.mov": "/portfolio-react/static/media/RPS-1.96891f69.mov",
     "static/media/RPS-2.dfb02f53.png": "/portfolio-react/static/media/RPS-2.dfb02f53.png",
     "static/media/RPS-3.1978f5b4.png": "/portfolio-react/static/media/RPS-3.1978f5b4.png",
+    "static/media/adobexd.8fab6040.png": "/portfolio-react/static/media/adobexd.8fab6040.png",
     "static/media/c.867c839c.png": "/portfolio-react/static/media/c.867c839c.png",
     "static/media/css.cac3fc2f.png": "/portfolio-react/static/media/css.cac3fc2f.png",
     "static/media/firebase.f58f8868.png": "/portfolio-react/static/media/firebase.f58f8868.png",
@@ -40,6 +41,6 @@
     "static/js/runtime-main.8cae13d3.js",
     "static/js/2.3d6298dc.chunk.js",
     "static/css/main.46ba52ea.chunk.css",
-    "static/js/main.08832b0a.chunk.js"
+    "static/js/main.fffdcf12.chunk.js"
   ]
 }
