@@ -46,7 +46,10 @@ export const Projects = (props) => {
       setDemoVid(
         <div>
           <video width="100%" controls>
-            {showDemo.which.map((video, index) => (
+            {showDemo.which.map((
+              video,
+              index // array to allow different video format attempts
+            ) => (
               <source src={video} key={index} />
             ))}
             Your browser does not support the video tag.
@@ -154,7 +157,7 @@ export const Projects = (props) => {
         {
           icon: <PlayCircleOutlineIcon />,
           title: "Watch a Demo Video",
-          link: () => setShowDemo({ show: true, which: [rockPaperScissors_1] }), // embed on page in a modal style; TODO: make demo video
+          link: () => setShowDemo({ show: true, which: [rockPaperScissors_1] }),
         },
         {
           icon: <OpenInNewIcon />,

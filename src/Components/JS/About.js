@@ -21,6 +21,7 @@ import nosql from "../../Images/Tech/nosql.png";
 import vscode from "../../Images/Tech/vscode.png";
 import git from "../../Images/Tech/git.png";
 import unity from "../../Images/Tech/unity.png";
+import adobexd from "../../Images/Tech/adobexd.png";
 
 export const About = (props) => {
   // setup animation styles
@@ -30,6 +31,70 @@ export const About = (props) => {
       animationName: Radium.keyframes(fadeIn, "fadeIn"),
     },
   };
+
+  // set up list of skills
+  const skills = [
+    {
+      title: "HTML",
+      src: html,
+    },
+    {
+      title: "CSS",
+      src: css,
+    },
+    {
+      title: "JS",
+      src: js,
+    },
+    {
+      title: "React",
+      src: react,
+    },
+    {
+      title: "C#",
+      src: Csharp,
+    },
+    {
+      title: "Unity",
+      src: unity,
+    },
+    {
+      title: "SQL and SSMS",
+      src: sql,
+    },
+    {
+      title: "MATLAB",
+      src: matlab,
+    },
+    {
+      title: "Java",
+      src: java,
+    },
+    {
+      title: "C",
+      src: c,
+    },
+    {
+      title: "Firebase",
+      src: firebase,
+    },
+    {
+      title: "NoSQL",
+      src: nosql,
+    },
+    {
+      title: "VS Code",
+      src: vscode,
+    },
+    {
+      title: "Git and GitHub",
+      src: git,
+    },
+    {
+      title: "Adobe XD",
+      src: adobexd,
+    },
+  ];
 
   return (
     <div className="page">
@@ -89,49 +154,15 @@ export const About = (props) => {
               <h3>{`<Skills/>`}</h3>
             </div>
             <div className="row">
-              <Tooltip arrow title="HTML">
-                <img className="skill-pic" alt="html" src={html} />
-              </Tooltip>
-              <Tooltip arrow title="CSS">
-                <img className="skill-pic" alt="css" src={css} />
-              </Tooltip>
-              <Tooltip arrow title="JS">
-                <img className="skill-pic" alt="js" src={js} />
-              </Tooltip>
-              <Tooltip arrow title="React">
-                <img className="skill-pic" alt="react" src={react} />
-              </Tooltip>
-              <Tooltip arrow title="C#">
-                <img className="skill-pic" alt="c sharp" src={Csharp} />
-              </Tooltip>
-              <Tooltip arrow title="Unity">
-                <img className="skill-pic" alt="unity" src={unity} />
-              </Tooltip>
-              <Tooltip arrow title="SQL and SSMS">
-                <img className="skill-pic" alt="sql" src={sql} />
-              </Tooltip>
-              <Tooltip arrow title="MATLAB">
-                <img className="skill-pic" alt="matlab" src={matlab} />
-              </Tooltip>
-              <Tooltip arrow title="Java">
-                <img className="skill-pic" alt="java" src={java} />
-              </Tooltip>
-              <Tooltip arrow title="C">
-                <img className="skill-pic" alt="c" src={c} />
-              </Tooltip>
-              <Tooltip arrow title="Firebase">
-                <img className="skill-pic" alt="firebase" src={firebase} />
-              </Tooltip>
-              <Tooltip arrow title="NoSQL">
-                <img className="skill-pic" alt="nosql" src={nosql} />
-              </Tooltip>
-              <Tooltip arrow title="VS Code">
-                <img className="skill-pic" alt="vscode" src={vscode} />
-              </Tooltip>
-              <Tooltip arrow title="Git and GitHub">
-                <img className="skill-pic" alt="git" src={git} />
-              </Tooltip>
-              {/* TODO : add adobe xd and compress this section with an array of objects variable and mapping that */}
+              {skills.map((skill, index) => (
+                <Tooltip key={index} arrow title={skill.title}>
+                  <img
+                    className="skill-pic"
+                    alt={skill.title}
+                    src={skill.src}
+                  />
+                </Tooltip>
+              ))}
             </div>
           </div>
         </div>
