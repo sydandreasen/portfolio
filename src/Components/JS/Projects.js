@@ -24,6 +24,11 @@ import edamam from "../../Images/Tech/edamam.png";
 
 // import all demo images
 import mp1 from "../../Images/DemoPics/MealPlanner/mealplanner-1.png";
+import mp2 from "../../Images/DemoPics/MealPlanner/mealplanner-2.png";
+import mp3 from "../../Images/DemoPics/MealPlanner/mealplanner-3.png";
+import mp4 from "../../Images/DemoPics/MealPlanner/mealplanner-4.png";
+import mp5 from "../../Images/DemoPics/MealPlanner/mealplanner-5.png";
+import mp6 from "../../Images/DemoPics/MealPlanner/mealplanner-6.png";
 import rps1 from "../../Images/DemoPics/RPS/RPS-1.png";
 import rps2 from "../../Images/DemoPics/RPS/RPS-2.png";
 import rps3 from "../../Images/DemoPics/RPS/RPS-3.png";
@@ -72,10 +77,7 @@ export const Projects = (props) => {
     {
       title: "Meal Planner",
       description: "plan meals in daily, weekly, or monthly perspective",
-      images: [
-        // TODO : import images at top and put variable names in here
-        mp1,
-      ],
+      images: [mp1, mp2, mp3, mp4, mp5, mp6],
       stack: [
         { img: react, title: "React" },
         { img: js, title: "JS" },
