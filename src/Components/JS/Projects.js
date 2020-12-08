@@ -35,6 +35,7 @@ import opr from "../../Images/DemoPics/OldPortfolio/oldPortfolio_research.png";
 
 // import demo videos
 import rockPaperScissors_1 from "../../Demos/RPS-1.mov";
+import mealPlanner_1 from "../../Demos/MP-1.mov";
 
 export const Projects = (props) => {
   // show a single demo modal and which modal
@@ -94,7 +95,7 @@ export const Projects = (props) => {
         {
           icon: <PlayCircleOutlineIcon />,
           title: "Watch a Demo Video",
-          link: () => setShowDemo({ show: true, which: [] }), // embed on page in a modal style; TODO: make demo video
+          link: () => setShowDemo({ show: true, which: [mealPlanner_1] }),
         },
         {
           icon: <OpenInNewIcon />,
