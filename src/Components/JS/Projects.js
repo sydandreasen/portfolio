@@ -12,6 +12,7 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 import OpenInNewIcon from "@material-ui/icons/OpenInNew";
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
+import GetAppIcon from "@material-ui/icons/GetApp";
 
 // import all tech stack images
 import react from "../../Images/Tech/react.png";
@@ -21,6 +22,8 @@ import html from "../../Images/Tech/html.png";
 import firebase from "../../Images/Tech/firebase.png";
 import nosql from "../../Images/Tech/nosql.png";
 import edamam from "../../Images/Tech/edamam.png";
+import unity from "../../Images/Tech/unity.png";
+import csharp from "../../Images/Tech/Csharp.png";
 
 // import all demo images
 import mp1 from "../../Images/DemoPics/MealPlanner/mealplanner-1.png";
@@ -37,10 +40,14 @@ import opa from "../../Images/DemoPics/OldPortfolio/oldPortfolio_about.png";
 import opp from "../../Images/DemoPics/OldPortfolio/oldPortfolio_projects.png";
 import opi from "../../Images/DemoPics/OldPortfolio/oldPortfolio_internship.png";
 import opr from "../../Images/DemoPics/OldPortfolio/oldPortfolio_research.png";
+import cards_pic from "../../Images/DemoPics/Cards.png";
 
 // import demo videos
 import rockPaperScissors_1 from "../../Demos/RPS-1.mov";
 import mealPlanner_1 from "../../Demos/MP-1.mov";
+
+// import dmg
+import cards from "../../Cards.dmg";
 
 export const Projects = (props) => {
   // show a single demo modal and which modal
@@ -73,6 +80,7 @@ export const Projects = (props) => {
     },
   };
 
+  // TODO add projects I want to make
   const projects = [
     {
       title: "Meal Planner",
@@ -250,6 +258,56 @@ export const Projects = (props) => {
             <li>Recap of PayPal Internship</li>
             <li>Summaries of Biomechanics Research</li>
           </ul>
+        </CardContent>
+      ),
+    },
+    {
+      title: "'Trash' Card Game",
+      description: "play trash against computerized player",
+      images: [cards_pic],
+      stack: [
+        { img: unity, title: "Unity" },
+        { img: csharp, title: "C#" },
+      ],
+      links: [
+        {
+          icon: (
+            <a href={cards} download>
+              <GetAppIcon id="get-trash-app" />
+            </a>
+          ),
+          title: "Download the App (For MacOS Users)",
+          link: () => {
+            document
+              .getElementById("get-trash-app")
+              .setAttribute("download", cards);
+          },
+        },
+        {
+          icon: <KeyboardArrowRightIcon />,
+          title: "See More Info",
+        },
+      ],
+      back: (
+        <CardContent>
+          <h3>'Trash' Card Game</h3>
+          <br />
+          <h4>Stack</h4>
+          <ul>
+            <li>Unity Editor - the looks</li>
+            <li>
+              C# - the works - especially the automation of the computer's turn
+            </li>
+          </ul>
+          <br />
+          <h4>How it Works</h4>
+          <p>
+            When it's your turn, click the active card to play it into the
+            correct spot. If a King is active for your turn, follow the
+            instructions to pick a place to put that wild card! If you turn a
+            card that you already have, or a <i>trash</i> card, your turn is
+            over. At that point, watch your computer opponent take their turn!
+          </p>
         </CardContent>
       ),
     },
