@@ -80,7 +80,6 @@ export const Projects = (props) => {
     },
   };
 
-  // TODO add projects I want to make
   const projects = [
     {
       title: "Meal Planner",
@@ -313,6 +312,54 @@ export const Projects = (props) => {
     },
   ];
 
+  const futureProjects = [
+    {
+      title: "Musical Sand Art",
+      description: "play songs to generate sandart to the beat",
+      images: [],
+      stack: [],
+      links: [
+        {
+          icon: <KeyboardArrowRightIcon />,
+          title: "See More Info",
+        },
+      ],
+      back: (
+        <CardContent>
+          <h3>Musical Sand Art</h3>
+          <br />
+          <h4>The Concept</h4>
+          <p>
+            Imagine a piano keyboard spanning across the top of your screen. Now
+            imagine that, instead of keys being pressed as music plays, colored
+            sand falls toward the bottom of the screen from the location of each
+            note's keyboard key, eventually filling your screen with beautiful
+            sand art, unique to the song you selected.
+          </p>
+          <br />
+          <h4>The Top Lessons I Aim to Learn</h4>
+          <p>
+            I would like to do this project with Python and a GUI framework,
+            such as Kivy. This will be the first project that I truly apply
+            Python to, so I am excited about a new language's syntax becoming
+            more natural to me. As I have experience with Unity, I have worked
+            wth physics in projects before, but I am eager to learn how to do
+            that in a python framework.
+          </p>
+          <br />
+          <h4>The Inspiration</h4>
+          <p>
+            I have always loved the power of music, so a project that could
+            incorporate that interest is automatically more interesting to me. I
+            came up with this specific idea though during a conversation with a
+            high school friend who was taking a course about mixing arts and
+            technology.
+          </p>
+        </CardContent>
+      ),
+    },
+  ];
+
   return (
     <div className="page">
       <div className="row">
@@ -320,8 +367,20 @@ export const Projects = (props) => {
       </div>
       <br />
       <StyleRoot>
+        <h3>Projects I Have Completed</h3>
+        <br />
+        <h4>(As if any Project is Truly Ever Complete)</h4>
+        <br />
         <div className="row pulse-hover projects" style={animations.fadeIn}>
           {projects.map((project) => (
+            <Project key={project.title} project={project} />
+          ))}
+        </div>
+        <br />
+        <h3>Projects I am Excited to do Next</h3>
+        <br />
+        <div className="row pulse-hover projects" style={animations.fadeIn}>
+          {futureProjects.map((project) => (
             <Project key={project.title} project={project} />
           ))}
         </div>
