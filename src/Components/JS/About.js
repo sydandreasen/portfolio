@@ -118,6 +118,7 @@ export const About = (props) => {
         </div>
         <div className="twothirds-column text pulse-hover">
           <StyleRoot>
+            {/* text greeting */}
             <div style={animations.fadeIn}>
               <h4>Hello, it is a pleasure to e-meet you!</h4>
               <p>
@@ -148,6 +149,7 @@ export const About = (props) => {
       </div>
       <br />
       <StyleRoot>
+        {/* skills */}
         <div style={animations.fadeIn} className="pulse-hover">
           <div className="row skills">
             <div className="row">
@@ -173,6 +175,7 @@ export const About = (props) => {
           <h1 style={animations.fadeIn}>Contact Sydney</h1>
         </StyleRoot>
       </div>
+      {/* contacts */}
       <div className="row contacts">
         <div className="half-column">
           <StyleRoot>

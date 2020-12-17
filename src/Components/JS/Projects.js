@@ -24,6 +24,8 @@ import nosql from "../../Images/Tech/nosql.png";
 import edamam from "../../Images/Tech/edamam.png";
 import unity from "../../Images/Tech/unity.png";
 import csharp from "../../Images/Tech/Csharp.png";
+import mui from "../../Images/Tech/materialui.png";
+import antd from "../../Images/Tech/antd.svg";
 
 // import all demo images
 import mp1 from "../../Images/DemoPics/MealPlanner/mealplanner-1.png";
@@ -41,6 +43,9 @@ import opp from "../../Images/DemoPics/OldPortfolio/oldPortfolio_projects.png";
 import opi from "../../Images/DemoPics/OldPortfolio/oldPortfolio_internship.png";
 import opr from "../../Images/DemoPics/OldPortfolio/oldPortfolio_research.png";
 import cards_pic from "../../Images/DemoPics/Cards.png";
+import cards_pile from "../../Images/DemoPics/FutureProjects/PlayingCards.jpg";
+import music_sand from "../../Images/DemoPics/FutureProjects/MusicalSandArt.jpg";
+import port_abt from "../../Images/DemoPics/Portfolio_About.png";
 
 // import demo videos
 import rockPaperScissors_1 from "../../Demos/RPS-1.mov";
@@ -82,6 +87,48 @@ export const Projects = (props) => {
 
   const projects = [
     {
+      title: "This Portfolio!",
+      description: "brief 'about me' + gallery of projects",
+      images: [port_abt],
+      stack: [
+        { img: react, title: "React" },
+        { img: js, title: "JS" },
+        { img: css, title: "CSS (SASS)" },
+        { img: mui, title: "Material UI Component Library" },
+      ],
+      links: [
+        {
+          icon: <GitHubIcon />,
+          title: "Go to GitHub Page",
+          link: () =>
+            // FIXME (after changing repo name to something more resume-friendly -- then also change old portfolio's link after having to change it's repo name)
+            window.open("https://github.com/sydandreasen/portfolio-react"),
+        },
+        {
+          icon: <KeyboardArrowRightIcon />,
+          title: "See More Info",
+        },
+      ],
+      back: (
+        <CardContent>
+          <h3>This Portfolio</h3>
+          <br />
+          <h4>Stack</h4>
+          <ul>
+            <li>React</li>
+            <ul>
+              <li>Use Material UI Component Library as building blocks</li>
+            </ul>
+            <li>JavaScript</li>
+            <li>CSS</li>
+            <ul>
+              <li>with the syntax benefits of SASS!</li>
+            </ul>
+          </ul>
+        </CardContent>
+      ),
+    },
+    {
       title: "Meal Planner",
       description: "plan meals in daily, weekly, or monthly perspective",
       images: [mp1, mp2, mp3, mp4, mp5, mp6],
@@ -92,6 +139,7 @@ export const Projects = (props) => {
         { img: firebase, title: "Firebase" },
         { img: nosql, title: "NoSQL" },
         { img: edamam, title: "Edamam API" },
+        { img: antd, title: "Ant Design Component Library" },
       ],
       links: [
         // import any components at top and put variable names in here
@@ -316,7 +364,7 @@ export const Projects = (props) => {
     {
       title: "Musical Sand Art",
       description: "play songs to generate sandart to the beat",
-      images: [],
+      images: [music_sand],
       stack: [],
       links: [
         {
@@ -354,6 +402,46 @@ export const Projects = (props) => {
             came up with this specific idea though during a conversation with a
             high school friend who was taking a course about mixing arts and
             technology.
+          </p>
+        </CardContent>
+      ),
+    },
+    {
+      title: "More Card Games!",
+      description: "Play Kings in the Corner and More",
+      images: [cards_pile],
+      stack: [],
+      links: [
+        {
+          icon: <KeyboardArrowRightIcon />,
+          title: "See More Info",
+        },
+      ],
+      back: (
+        <CardContent>
+          <h3>More Card Games</h3>
+          <br />
+          <h4>The Concept</h4>
+          <p>
+            Similar, to my 'Trash' card game project, this should be a built
+            standalone application to play card games against a computer. With
+            some basic understand of what works well for detecting clicks on
+            cards, moving cards, and managing logic about a card's value, I want
+            to next develop a game that is naturally more complex. With Kings in
+            the Corner for example, I will be challenged to develop efficient
+            code for a much more logically complex game for what sort of turns
+            are allowed. As other games like Kings in the Corner are much more
+            dependent on strategy than luck, I will also be challenged to
+            develop a drag-and-drop style of play such that the app does not
+            make plays on the behalf of the player (besides the computerized
+            opponent, of course).
+          </p>
+          <br />
+          <h4>The Inspiration</h4>
+          <p>
+            I love playing and learning new card games. The strategy speaks to
+            my competitive edge, and I would like to combine my interests to
+            code more games.
           </p>
         </CardContent>
       ),
