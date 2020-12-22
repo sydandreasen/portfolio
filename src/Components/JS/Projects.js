@@ -46,6 +46,8 @@ import cards_pic from "../../Images/DemoPics/Cards.png";
 import cards_pile from "../../Images/DemoPics/FutureProjects/PlayingCards.jpg";
 import music_sand from "../../Images/DemoPics/FutureProjects/MusicalSandArt.jpg";
 import port_abt from "../../Images/DemoPics/Portfolio_About.png";
+import netflix from "../../Images/DemoPics/FutureProjects/Netflix.jpg";
+import path_find from "../../Images/DemoPics/FutureProjects/PathFind.jpg";
 
 // import demo videos
 import rockPaperScissors_1 from "../../Demos/RPS-1.mov";
@@ -442,6 +444,56 @@ export const Projects = (props) => {
             I love playing and learning new card games. The strategy speaks to
             my competitive edge, and I would like to combine my interests to
             code more games.
+          </p>
+        </CardContent>
+      ),
+    },
+    {
+      title: "Mimic Netflix.com's UI",
+      description: "recreate a mockup of Netflix's website",
+      images: [netflix],
+      stack: [],
+      links: [
+        {
+          icon: <KeyboardArrowRightIcon />,
+          title: "See More Info",
+        },
+      ],
+      back: (
+        <CardContent>
+          <h3>Mimic Netflix's UI</h3>
+          <br />
+          <h4>The Top Lessons</h4>
+          <p>
+            My main goal of this project is to test myself in CSS. I will
+            largely use basic HTML and CSS to recreate the intricate visual
+            features of Netlfix's well-known and responsive UI and only use
+            React for the ease of repeating organized components.
+          </p>
+        </CardContent>
+      ),
+    },
+    {
+      title: "Pathfinding Visualizer",
+      description:
+        "generate quickest path from point A to point B, avoiding given obstacles",
+      images: [path_find],
+      stack: [],
+      links: [
+        {
+          icon: <KeyboardArrowRightIcon />,
+          title: "See More Info",
+        },
+      ],
+      back: (
+        <CardContent>
+          <h3>Pathfinding Visualizer</h3>
+          <br />
+          <h4>The Top Lessons</h4>
+          <p>
+            While also learning through the creation of the GUI, my main goal
+            with this project is to explore the mathematical calculations for
+            finding the most ideal path from one location to another.
           </p>
         </CardContent>
       ),
