@@ -9,16 +9,6 @@ $light: #aaabb8;
 $lblue: #2e9cca;
 $dblue: #29648a;
 
-@keyframes pulse {
-  // TODO : turn this back on and make cohesive with turning card animation
-  // from {
-  //   transform: scale(1);
-  // }
-  // to {
-  //   transform: scale(1.025);
-  // }
-}
-
 * {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -36,9 +26,22 @@ body {
 
 .pulse-hover {
   :hover {
-    animation-name: pulse;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+    transform: scale(1.025);
+    transition: transform 0.5s;
+    // animation-name: pulse;
+    // animation-duration: 0.5s;
+    // animation-fill-mode: forwards;
+  }
+  .MuiCard-root {
+    .MuiCardMedia-root img:hover {
+      transform: none;
+    }
+    .MuiCardContent-root :hover {
+      transform: none;
+    }
+    div:hover {
+      transform: none;
+    }
   }
 }
 
