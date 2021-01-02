@@ -108,7 +108,6 @@ export const Projects = (props) => {
         },
         {
           icon: <KeyboardArrowRightIcon />,
-          title: "See More Info",
         },
       ],
       back: (
@@ -163,7 +162,6 @@ export const Projects = (props) => {
         },
         {
           icon: <KeyboardArrowRightIcon />,
-          title: "See More Info",
         },
       ],
       back: (
@@ -227,7 +225,6 @@ export const Projects = (props) => {
         },
         {
           icon: <KeyboardArrowRightIcon />,
-          title: "See More Info",
         },
       ],
       back: (
@@ -284,7 +281,6 @@ export const Projects = (props) => {
         },
         {
           icon: <KeyboardArrowRightIcon />,
-          title: "See More Info",
         },
       ],
       back: (
@@ -334,7 +330,6 @@ export const Projects = (props) => {
         },
         {
           icon: <KeyboardArrowRightIcon />,
-          title: "See More Info",
         },
       ],
       back: (
@@ -371,7 +366,6 @@ export const Projects = (props) => {
       links: [
         {
           icon: <KeyboardArrowRightIcon />,
-          title: "See More Info",
         },
       ],
       back: (
@@ -416,7 +410,6 @@ export const Projects = (props) => {
       links: [
         {
           icon: <KeyboardArrowRightIcon />,
-          title: "See More Info",
         },
       ],
       back: (
@@ -456,7 +449,6 @@ export const Projects = (props) => {
       links: [
         {
           icon: <KeyboardArrowRightIcon />,
-          title: "See More Info",
         },
       ],
       back: (
@@ -482,7 +474,6 @@ export const Projects = (props) => {
       links: [
         {
           icon: <KeyboardArrowRightIcon />,
-          title: "See More Info",
         },
       ],
       back: (

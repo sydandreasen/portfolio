@@ -17,32 +17,38 @@ export const Project = (props) => {
   return side === "back" ? (
     // back of card!
     <Card className={`project ${side}`}>
-      {props.project.back}
-      <div className="row skills-and-links-row">
-        <CardActions>
-          <div className="row">
-            {props.project.stack.map((tech) => (
-              <Tooltip arrow key={tech.title} title={tech.title}>
-                <IconButton className="tech">
-                  <img src={tech.img} alt={tech.title} />
-                </IconButton>
-              </Tooltip>
-            ))}
-          </div>
-        </CardActions>
-        <CardActions>
-          <div className="row">
-            {props.project.links.map((link) => (
-              <Tooltip arrow key={link.title} title={link.title}>
-                <IconButton
-                  onClick={link.link ? link.link : () => setSide("front")}
+      <div className="flipBack">
+        {props.project.back}
+        <div className="row skills-and-links-row">
+          <CardActions>
+            <div className="row">
+              {props.project.stack.map((tech) => (
+                <Tooltip arrow key={tech.title} title={tech.title}>
+                  <IconButton className="tech">
+                    <img src={tech.img} alt={tech.title} />
+                  </IconButton>
+                </Tooltip>
+              ))}
+            </div>
+          </CardActions>
+          <CardActions>
+            <div className="row">
+              {props.project.links.map((link) => (
+                <Tooltip
+                  arrow
+                  key={link.title ? link.title : "Return to Front"}
+                  title={link.title ? link.title : "Return to Front"}
                 >
-                  {link.link ? link.icon : <KeyboardArrowLeftIcon />}
-                </IconButton>
-              </Tooltip>
-            ))}
-          </div>
-        </CardActions>
+                  <IconButton
+                    onClick={link.link ? link.link : () => setSide("front")}
+                  >
+                    {link.link ? link.icon : <KeyboardArrowLeftIcon />}
+                  </IconButton>
+                </Tooltip>
+              ))}
+            </div>
+          </CardActions>
+        </div>
       </div>
     </Card>
   ) : (
@@ -71,7 +77,11 @@ export const Project = (props) => {
         <CardActions>
           <div className="row">
             {props.project.links.map((link) => (
-              <Tooltip arrow key={link.title} title={link.title}>
+              <Tooltip
+                arrow
+                key={link.title ? link.title : "See More Info"}
+                title={link.title ? link.title : "See More Info"}
+              >
                 <IconButton
                   onClick={link.link ? link.link : () => setSide("back")}
                 >
