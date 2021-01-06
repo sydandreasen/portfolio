@@ -102,9 +102,7 @@ export const Projects = (props) => {
         {
           icon: <GitHubIcon />,
           title: "Go to GitHub Page",
-          link: () =>
-            // FIXME (after changing repo name to something more resume-friendly -- then also change old portfolio's link after having to change it's repo name)
-            window.open("https://github.com/sydandreasen/portfolio-react"),
+          link: () => window.open("https://github.com/sydandreasen/portfolio"),
         },
         {
           icon: <KeyboardArrowRightIcon />,
@@ -272,12 +270,14 @@ export const Projects = (props) => {
         {
           icon: <GitHubIcon />,
           title: "Go to GitHub Page",
-          link: () => window.open("https://github.com/sydandreasen/Portfolio"),
+          link: () =>
+            window.open("https://github.com/sydandreasen/portfolio-archive"),
         },
         {
           icon: <OpenInNewIcon />,
           title: "Open Live Site",
-          link: () => window.open("https://sydandreasen.github.io/Portfolio/"),
+          link: () =>
+            window.open("https://sydandreasen.github.io/portfolio-archive/"),
         },
         {
           icon: <KeyboardArrowRightIcon />,
