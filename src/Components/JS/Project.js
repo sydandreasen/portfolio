@@ -16,9 +16,55 @@ export const Project = (props) => {
 
   return side === "back" ? (
     // back of card!
-    <Card className={`project ${side}`}>
-      <div className="flipBack">
-        {props.project.back}
+    <div className={`pulse-hover-project ${side}`}>
+      <Card className={`project`}>
+        <div className="flipBack">
+          {props.project.back}
+          <div className="row skills-and-links-row">
+            <CardActions>
+              <div className="row">
+                {props.project.stack.map((tech) => (
+                  <Tooltip arrow key={tech.title} title={tech.title}>
+                    <IconButton className="tech">
+                      <img src={tech.img} alt={tech.title} />
+                    </IconButton>
+                  </Tooltip>
+                ))}
+              </div>
+            </CardActions>
+            <CardActions>
+              <div className="row">
+                {props.project.links.map((link) => (
+                  <Tooltip
+                    arrow
+                    key={link.title ? link.title : "Return to Front"}
+                    title={link.title ? link.title : "Return to Front"}
+                  >
+                    <IconButton
+                      onClick={link.link ? link.link : () => setSide("front")}
+                    >
+                      {link.link ? link.icon : <KeyboardArrowLeftIcon />}
+                    </IconButton>
+                  </Tooltip>
+                ))}
+              </div>
+            </CardActions>
+          </div>
+        </div>
+      </Card>
+    </div>
+  ) : (
+    // front of card!
+    <div className={`pulse-hover-project ${side}`}>
+      <Card className={`project`}>
+        <Gallery images={props.project.images} />
+        <CardContent>
+          <h3>{props.project.title}</h3>
+          <br />
+          <p>
+            <i>{props.project.description}</i>
+          </p>
+        </CardContent>
         <div className="row skills-and-links-row">
           <CardActions>
             <div className="row">
@@ -36,62 +82,20 @@ export const Project = (props) => {
               {props.project.links.map((link) => (
                 <Tooltip
                   arrow
-                  key={link.title ? link.title : "Return to Front"}
-                  title={link.title ? link.title : "Return to Front"}
+                  key={link.title ? link.title : "See More Info"}
+                  title={link.title ? link.title : "See More Info"}
                 >
                   <IconButton
-                    onClick={link.link ? link.link : () => setSide("front")}
+                    onClick={link.link ? link.link : () => setSide("back")}
                   >
-                    {link.link ? link.icon : <KeyboardArrowLeftIcon />}
+                    {link.icon}
                   </IconButton>
                 </Tooltip>
               ))}
             </div>
           </CardActions>
         </div>
-      </div>
-    </Card>
-  ) : (
-    // front of card!
-    <Card className={side}>
-      <Gallery images={props.project.images} />
-      <CardContent>
-        <h3>{props.project.title}</h3>
-        <br />
-        <p>
-          <i>{props.project.description}</i>
-        </p>
-      </CardContent>
-      <div className="row skills-and-links-row">
-        <CardActions>
-          <div className="row">
-            {props.project.stack.map((tech) => (
-              <Tooltip arrow key={tech.title} title={tech.title}>
-                <IconButton className="tech">
-                  <img src={tech.img} alt={tech.title} />
-                </IconButton>
-              </Tooltip>
-            ))}
-          </div>
-        </CardActions>
-        <CardActions>
-          <div className="row">
-            {props.project.links.map((link) => (
-              <Tooltip
-                arrow
-                key={link.title ? link.title : "See More Info"}
-                title={link.title ? link.title : "See More Info"}
-              >
-                <IconButton
-                  onClick={link.link ? link.link : () => setSide("back")}
-                >
-                  {link.icon}
-                </IconButton>
-              </Tooltip>
-            ))}
-          </div>
-        </CardActions>
-      </div>
-    </Card>
+      </Card>
+    </div>
   );
 };

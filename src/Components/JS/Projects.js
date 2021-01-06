@@ -502,7 +502,7 @@ export const Projects = (props) => {
         <br />
         <h4>(As if any Project is Truly Ever Complete)</h4>
         <br />
-        <div className="row pulse-hover projects" style={animations.fadeIn}>
+        <div className="row projects" style={animations.fadeIn}>
           {projects.map((project) => (
             <Project key={project.title} project={project} />
           ))}
@@ -510,7 +510,7 @@ export const Projects = (props) => {
         <br />
         <h3>Projects I am Excited to do Next</h3>
         <br />
-        <div className="row pulse-hover projects" style={animations.fadeIn}>
+        <div className="row projects" style={animations.fadeIn}>
           {futureProjects.map((project) => (
             <Project key={project.title} project={project} />
           ))}

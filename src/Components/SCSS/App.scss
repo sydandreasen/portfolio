@@ -26,26 +26,38 @@ body {
 
 .pulse-hover {
   :hover {
-    // FIXME need to check and change accordingly if first child has class name "back"
-    // @if () {
-    //   transform: none;
-    // } @else {
     transform: scale(1.025);
     transition: transform 0.5s;
-    // }
-    // .back {
-    //   .MuiCardContent-root {
-    //     transform: rotateY(-180deg);
-    //     transition: transform 1s;
-    //   }
-    //   div {
-    //     transform: rotateY(-180deg);
-    //     transition: transform 1s;
-    //   }
-    // }
   }
 
   .MuiCard-root {
+    display: inline-block;
+
+    .MuiCardMedia-root img:hover {
+      transform: none;
+    }
+    .MuiCardContent-root :hover {
+      transform: none;
+    }
+    div:hover {
+      transform: none;
+    }
+  }
+}
+
+.pulse-hover-project {
+  width: 30.5%;
+  min-width: 400px;
+  margin: 1%;
+
+  :hover {
+    transform: scale(1.025);
+    transition: transform 0.5s;
+  }
+
+  .MuiCard-root {
+    display: inline-block;
+
     .MuiCardMedia-root img:hover {
       transform: none;
     }
@@ -185,7 +197,7 @@ body {
   }
 
   .MuiCard-root {
-    max-width: 30.5%;
+    // max-width: 30.5%;
     min-width: 400px;
     border-radius: 1vw;
     border: 4px $dblue solid;
@@ -197,8 +209,15 @@ body {
       h3 {
         font-size: calc(9px + 0.5vw);
       }
+      h4 {
+        font-size: calc(8px + 0.5vw);
+      }
 
       p {
+        font-size: calc(7px + 0.4vw);
+      }
+
+      li {
         font-size: calc(7px + 0.4vw);
       }
     }
@@ -249,7 +268,6 @@ body {
 
   .back {
     // back of card to show
-    // TODO : figure out how to animate this
     text-align: left;
     h3 {
       font-size: calc(9px + 0.5vw);
@@ -264,22 +282,5 @@ body {
     p {
       font-size: calc(7px + 0.4vw);
     }
-
-    // transform: rotateY(180deg);
-    // transition: transform 1s;
-
-    // .MuiCardContent-root {
-    //   transform: rotateY(-180deg);
-    //   transition: transform 1s;
-    // }
-    // .skills-and-links-row {
-    //   transform: rotateY(-180deg);
-    //   transition: transform 1s;
-    // }
-  }
-
-  .front {
-    // to flip back to front of project card
-    // TODO : figure out how to animate this
   }
 }
