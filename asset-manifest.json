@@ -1,17 +1,18 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.e8efa2bc.chunk.css",
-    "main.js": "/portfolio/static/js/main.36632192.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.36632192.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.cf832ebf.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.cf832ebf.js.map",
-    "static/js/2.fdb8794c.chunk.js": "/portfolio/static/js/2.fdb8794c.chunk.js",
-    "static/js/2.fdb8794c.chunk.js.map": "/portfolio/static/js/2.fdb8794c.chunk.js.map",
-    "static/js/3.2ce9d7d3.chunk.js": "/portfolio/static/js/3.2ce9d7d3.chunk.js",
-    "static/js/3.2ce9d7d3.chunk.js.map": "/portfolio/static/js/3.2ce9d7d3.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.e1eec492.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e1eec492.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.4d11dcd4.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.4d11dcd4.js.map",
+    "static/js/2.9fec34ab.chunk.js": "/portfolio/static/js/2.9fec34ab.chunk.js",
+    "static/js/2.9fec34ab.chunk.js.map": "/portfolio/static/js/2.9fec34ab.chunk.js.map",
+    "static/js/3.4e9b1289.chunk.js": "/portfolio/static/js/3.4e9b1289.chunk.js",
+    "static/js/3.4e9b1289.chunk.js.map": "/portfolio/static/js/3.4e9b1289.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/main.e8efa2bc.chunk.css.map": "/portfolio/static/css/main.e8efa2bc.chunk.css.map",
-    "static/js/2.fdb8794c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.fdb8794c.chunk.js.LICENSE.txt",
+    "static/js/2.9fec34ab.chunk.js.LICENSE.txt": "/portfolio/static/js/2.9fec34ab.chunk.js.LICENSE.txt",
+    "static/media/Andreasen_Sydney_Resume_2021.1c329230.pdf": "/portfolio/static/media/Andreasen_Sydney_Resume_2021.1c329230.pdf",
     "static/media/Cards.425b32f8.png": "/portfolio/static/media/Cards.425b32f8.png",
     "static/media/Cards.78389c21.dmg": "/portfolio/static/media/Cards.78389c21.dmg",
     "static/media/Csharp.ffe36174.png": "/portfolio/static/media/Csharp.ffe36174.png",
@@ -44,9 +45,9 @@
     "static/media/react.483a8da5.png": "/portfolio/static/media/react.483a8da5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.cf832ebf.js",
-    "static/js/2.fdb8794c.chunk.js",
+    "static/js/runtime-main.4d11dcd4.js",
+    "static/js/2.9fec34ab.chunk.js",
     "static/css/main.e8efa2bc.chunk.css",
-    "static/js/main.36632192.chunk.js"
+    "static/js/main.e1eec492.chunk.js"
   ]
 }
