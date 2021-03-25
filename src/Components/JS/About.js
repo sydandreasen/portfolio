@@ -4,6 +4,7 @@ import EmailIcon from "@material-ui/icons/Email";
 import PhoneIcon from "@material-ui/icons/Phone";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import FacebookIcon from "@material-ui/icons/Facebook";
+import DescriptionIcon from "@material-ui/icons/Description";
 import { fadeIn } from "react-animations";
 import Radium, { StyleRoot } from "radium";
 import profPic from "../../Images/PP_ProfilePic.JPG";
@@ -22,6 +23,7 @@ import vscode from "../../Images/Tech/vscode.png";
 import git from "../../Images/Tech/git.png";
 import unity from "../../Images/Tech/unity.png";
 import adobexd from "../../Images/Tech/adobexd.png";
+import resume from "../../Andreasen_Sydney_Resume_2021.pdf";
 
 export const About = (props) => {
   // setup animation styles
@@ -183,14 +185,21 @@ export const About = (props) => {
               <p>
                 <EmailIcon style={{ verticalAlign: "middle" }} />
                 <span> Email Me : </span>
-                <a href="mailto:sydandreasen@abbnebraska.com">
-                  sydandreasen@abbnebraska.com
+                <a href="mailto:sydandreasen@gmail.com">
+                  sydandreasen@gmail.com
                 </a>
               </p>
               <p>
                 <PhoneIcon style={{ verticalAlign: "middle" }} />
                 <span> Call or Text Me : </span>
                 <a href="tel:4022370162">402-237-0162</a>
+              </p>
+              <p>
+                <DescriptionIcon style={{ verticalAlign: "middle" }} />
+                <span>Download my </span>
+                <a download href={resume}>
+                  Resume
+                </a>
               </p>
             </div>
           </StyleRoot>
@@ -202,12 +211,22 @@ export const About = (props) => {
               <p>
                 <LinkedInIcon style={{ verticalAlign: "middle" }} />
                 <span> LinkedIn Profile : </span>
-                <a href="https://www.linkedin.com/in/sydney-a/">sydney-a</a>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.linkedin.com/in/sydney-a/"
+                >
+                  sydney-a
+                </a>
               </p>
               <p>
                 <FacebookIcon style={{ verticalAlign: "middle" }} />
                 <span> Facebook Profile : </span>
-                <a href="https://www.facebook.com/sydney.andreasen">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://www.facebook.com/sydney.andreasen"
+                >
                   sydney.andreasen
                 </a>
               </p>
