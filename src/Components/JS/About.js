@@ -196,9 +196,9 @@ export const About = (props) => {
               </p>
               <p>
                 <DescriptionIcon style={{ verticalAlign: "middle" }} />
-                <span>Download my </span>
+                <span> </span>
                 <a download href={resume}>
-                  Resume
+                  Download My Resume
                 </a>
               </p>
             </div>
