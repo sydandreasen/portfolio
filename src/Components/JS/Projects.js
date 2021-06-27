@@ -13,10 +13,13 @@ import PlayCircleOutlineIcon from "@material-ui/icons/PlayCircleOutline";
 import OpenInNewIcon from "@material-ui/icons/OpenInNew";
 import KeyboardArrowRightIcon from "@material-ui/icons/KeyboardArrowRight";
 import GetAppIcon from "@material-ui/icons/GetApp";
+import WebIcon from "@material-ui/icons/Web";
 
 // import all tech stack images
 import react from "../../Images/Tech/react.png";
+import angular from "../../Images/Tech/angular.png";
 import js from "../../Images/Tech/js.png";
+import ts from "../../Images/Tech/typescript.png";
 import css from "../../Images/Tech/css.png";
 import html from "../../Images/Tech/html.png";
 import firebase from "../../Images/Tech/firebase.png";
@@ -34,6 +37,10 @@ import mp3 from "../../Images/DemoPics/MealPlanner/mealplanner-3.png";
 import mp4 from "../../Images/DemoPics/MealPlanner/mealplanner-4.png";
 import mp5 from "../../Images/DemoPics/MealPlanner/mealplanner-5.png";
 import mp6 from "../../Images/DemoPics/MealPlanner/mealplanner-6.png";
+import patient1 from "../../Images/DemoPics/myPatient/myPatient1.png";
+import patient2 from "../../Images/DemoPics/myPatient/myPatient2.png";
+import ms1 from "../../Images/DemoPics/Minesweeper/ms1.png";
+import ms2 from "../../Images/DemoPics/Minesweeper/ms2.png";
 import rps1 from "../../Images/DemoPics/RPS/RPS-1.png";
 import rps2 from "../../Images/DemoPics/RPS/RPS-2.png";
 import rps3 from "../../Images/DemoPics/RPS/RPS-3.png";
@@ -52,6 +59,7 @@ import path_find from "../../Images/DemoPics/FutureProjects/PathFind.jpg";
 // import demo videos
 import rockPaperScissors_1 from "../../Demos/RPS-1.mov";
 import mealPlanner_1 from "../../Demos/MP-1.mov";
+import minesweeper from "../../Demos/minesweeper.mov";
 
 // import dmg
 import cards from "../../Cards.dmg";
@@ -66,12 +74,14 @@ export const Projects = (props) => {
       setDemoVid(
         <div>
           <video width="100%" controls>
-            {showDemo.which.map((
-              video,
-              index // array to allow different video format attempts
-            ) => (
-              <source src={video} key={index} />
-            ))}
+            {showDemo.which.map(
+              (
+                video,
+                index // array to allow different video format attempts
+              ) => (
+                <source src={video} key={index} />
+              )
+            )}
             Your browser does not support the video tag.
           </video>
         </div>
@@ -188,6 +198,157 @@ export const Projects = (props) => {
             <li>
               Plus so many features I'd love to add with a paid API subscription
               (check the GitHub README for more on this!)
+            </li>
+          </ul>
+        </CardContent>
+      ),
+    },
+    {
+      title: "myPatient",
+      description: "Second place at HackUNO 2021; A 24-hour partner project",
+      images: [patient1, patient2],
+      stack: [
+        { img: react, title: "React" },
+        { img: js, title: "JS" },
+        { img: css, title: "CSS" },
+        { img: html, title: "HTML" },
+        { img: firebase, title: "Firebase" },
+        { img: nosql, title: "NoSQL" },
+        { img: antd, title: "Ant Design Component Library" },
+      ],
+      links: [
+        // import any components at top and put variable names in here
+        {
+          icon: <GitHubIcon />,
+          title: "Go to GitHub Page",
+          link: () => window.open("https://github.com/sydandreasen/myPatient"),
+        },
+        {
+          icon: <WebIcon />,
+          title: "Open Hackathon Site",
+          link: () => window.open("https://devpost.com/software/mypatient"),
+        },
+        {
+          icon: <OpenInNewIcon />,
+          title: "Open Live Site",
+          link: () => window.open("https://mypatienthackuno1021.web.app/"),
+        },
+        {
+          icon: <KeyboardArrowRightIcon />,
+        },
+      ],
+      back: (
+        <CardContent>
+          <h3>myPatient</h3>
+          <h5>Second Place Winner at HackUNO 2021</h5>
+          <h5>
+            A 24-hour partner project with{" "}
+            <a
+              href="https://www.linkedin.com/in/justin-rathbone-11ba73183/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Justin Rathbone
+            </a>
+          </h5>
+          <br />
+          <h5>Stack</h5>
+          <ul>
+            <li>React</li>
+            <li>JavaScript</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>Ant Design React Component Library</li>
+            <li>Firebase Realtime NoSQL DB - R&D from CRUD</li>
+            <li>Hosting via Firebase</li>
+            <li>Firebase Authentication</li>
+          </ul>
+          <br />
+          <h5>What it Does</h5>
+          <p>
+            myPatient is a Software-as-a-Service (SaaS) application that
+            provides a homepage listing the doctors at a healthcare facility and
+            allows each to securely login to a dashboard. This dashboard
+            facilitates quick navigation between the information of all their
+            patients currently staying at the hospital. At a glance, the doctor
+            can see information about the patient's age, reason for
+            hospitalization, vitals, test results, and documentation of their
+            diagnosis.
+          </p>
+          <br />
+          <p>
+            Check out our README in the repo for more on the project
+            inspiration, challenges we ran into, accomplishements we were proud
+            to reach in 24 hours of coding, what we learned from the project,
+            and what would be next for myPatient.
+          </p>
+        </CardContent>
+      ),
+    },
+    {
+      title: "Minesweeper",
+      description: "one day project. play minesweeper whenever",
+      images: [ms1, ms2],
+      stack: [
+        { img: angular, title: "Angular" },
+        { img: ts, title: "TS" },
+        { img: css, title: "CSS (SASS)" },
+        { img: html, title: "HTML" },
+      ],
+      links: [
+        // import any components at top and put variable names in here
+        {
+          icon: <GitHubIcon />,
+          title: "Go to GitHub Page",
+          link: () =>
+            window.open("https://github.com/sydandreasen/minesweeper"),
+        },
+        {
+          icon: <PlayCircleOutlineIcon />,
+          title: "Watch a Demo Video",
+          link: () => setShowDemo({ show: true, which: [minesweeper] }),
+        },
+        {
+          icon: <OpenInNewIcon />,
+          title: "Open Live Site",
+          link: () =>
+            window.open("https://sydandreasen.github.io/minesweeper/"),
+        },
+        {
+          icon: <KeyboardArrowRightIcon />,
+        },
+      ],
+      back: (
+        <CardContent>
+          <h3>Minesweeper</h3>
+          <br />
+          <h4>Stack</h4>
+          <ul>
+            <li>Angular</li>
+            <li>TypeScript</li>
+            <li>CSS (via SASS)</li>
+            <li>HTML</li>
+          </ul>
+          <br />
+          <h4>How to Play</h4>
+          <ul>
+            <li>
+              Create a new game with the currently selected difficult level at
+              any time.
+            </li>
+            <li>
+              Select a difficulty level to create a new game in that difficulty
+              level.
+            </li>
+            <li>
+              Difficulty levels affect the probability of each block being a
+              bomb.
+            </li>
+            <li>Left-click on blocks that you think are safe.</li>
+            <li>Right-click on blocks that you want to flag as mines.</li>
+            <li>
+              To win, left-click all non-mine blocks. Left-click on a mine
+              block, and you lose.
             </li>
           </ul>
         </CardContent>

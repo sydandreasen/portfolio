@@ -14,7 +14,9 @@ import java from "../../Images/Tech/java.png";
 import Csharp from "../../Images/Tech/Csharp.png";
 import css from "../../Images/Tech/css.png";
 import js from "../../Images/Tech/js.png";
+import ts from "../../Images/Tech/typescript.png";
 import react from "../../Images/Tech/react.png";
+import angular from "../../Images/Tech/angular.png";
 import c from "../../Images/Tech/c.png";
 import sql from "../../Images/Tech/sql.png";
 import firebase from "../../Images/Tech/firebase.png";
@@ -49,8 +51,16 @@ export const About = (props) => {
       src: js,
     },
     {
+      title: "TS",
+      src: ts,
+    },
+    {
       title: "React",
       src: react,
+    },
+    {
+      title: "Angular",
+      src: angular,
     },
     {
       title: "C#",
@@ -125,8 +135,8 @@ export const About = (props) => {
               <h4>Hello, it is a pleasure to e-meet you!</h4>
               <p>
                 I am a Computer Science student at UNO. I will be graduating
-                with my B.S. in May 2022 and be continuing on to get my M.S. in
-                C.S. through UNO's integrated program.
+                with my B.S. in May 2022 and be continuing on as a part-time
+                student to get my M.S. in C.S. through UNO's integrated program.
               </p>
               <p>
                 My hobbies include playing cards, learning to dance, watching
@@ -134,11 +144,13 @@ export const About = (props) => {
                 all time: Friends.
               </p>
               <p>
-                Currently, I am loving to code in React in my free time. I'd be
-                really interested in learning about Angular or .NET with C#
-                next. In my research work at the UNO Biomechanics Research
-                Building, my favorite projects that I am involved in are virtual
-                reality projects, where I create environments with Unity and C#.
+                Currently, I very much enjoy programming with React and Angular,
+                but I would love to improve my understanding in full stack
+                applications. I'd be really interested in learning about .NET
+                and MVC architecture next. In my research work at the UNO
+                Biomechanics Research Building, my favorite projects that I am
+                involved in are virtual reality projects, where I create
+                environments with Unity and C#.
               </p>
               <p>
                 In the future, I would love to be a Software Engineer for a
