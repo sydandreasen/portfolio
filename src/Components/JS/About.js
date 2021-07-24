@@ -19,6 +19,7 @@ import react from "../../Images/Tech/react.png";
 import angular from "../../Images/Tech/angular.png";
 import c from "../../Images/Tech/c.png";
 import sql from "../../Images/Tech/sql.png";
+import net from "../../Images/Tech/dotnetcore.png";
 import firebase from "../../Images/Tech/firebase.png";
 import nosql from "../../Images/Tech/nosql.png";
 import vscode from "../../Images/Tech/vscode.png";
@@ -61,6 +62,10 @@ export const About = (props) => {
     {
       title: "Angular",
       src: angular,
+    },
+    {
+      title: ".NET Core",
+      src: net,
     },
     {
       title: "C#",

@@ -22,6 +22,7 @@ import js from "../../Images/Tech/js.png";
 import ts from "../../Images/Tech/typescript.png";
 import css from "../../Images/Tech/css.png";
 import html from "../../Images/Tech/html.png";
+import net from "../../Images/Tech/dotnetcore.png";
 import firebase from "../../Images/Tech/firebase.png";
 import nosql from "../../Images/Tech/nosql.png";
 import edamam from "../../Images/Tech/edamam.png";
@@ -41,6 +42,7 @@ import patient1 from "../../Images/DemoPics/myPatient/myPatient1.png";
 import patient2 from "../../Images/DemoPics/myPatient/myPatient2.png";
 import ms1 from "../../Images/DemoPics/Minesweeper/ms1.png";
 import ms2 from "../../Images/DemoPics/Minesweeper/ms2.png";
+import capratecalc from "../../Images/DemoPics/capratecalc.png";
 import rps1 from "../../Images/DemoPics/RPS/RPS-1.png";
 import rps2 from "../../Images/DemoPics/RPS/RPS-2.png";
 import rps3 from "../../Images/DemoPics/RPS/RPS-3.png";
@@ -349,6 +351,61 @@ export const Projects = (props) => {
             <li>
               To win, left-click all non-mine blocks. Left-click on a mine
               block, and you lose.
+            </li>
+          </ul>
+        </CardContent>
+      ),
+    },
+    {
+      title: "FarmLend Capitalization Rate Calculator",
+      description: "customer-facing internship project",
+      images: [capratecalc],
+      stack: [
+        { img: angular, title: "Angular" },
+        { img: ts, title: "TS" },
+        { img: css, title: "CSS (SASS)" },
+        { img: html, title: "HTML" },
+        { img: net, title: ".NET" },
+      ],
+      links: [
+        // import any components at top and put variable names in here
+        {
+          icon: <OpenInNewIcon />,
+          title: "Open Live Site - go to Cap Rate Calc Tab",
+          link: () => window.open("https://www.farmlend.com/calculators"),
+        },
+        {
+          icon: <KeyboardArrowRightIcon />,
+        },
+      ],
+      back: (
+        <CardContent>
+          <h3>FarmLend Capitalization Rate Calculator</h3>
+          <br />
+          <h4>Stack</h4>
+          <ul>
+            <li>Angular</li>
+            <li>TypeScript</li>
+            <li>CSS (via SASS)</li>
+            <li>HTML</li>
+            <li>.NET</li>
+          </ul>
+          <br />
+          <h4>What it is</h4>
+          <ul>
+            <li>
+              A customer-facing project that was designed, developed, and
+              deployed during my internship at Farm Credit Services of America
+              during summer 2021
+            </li>
+          </ul>
+          <br />
+          <h4>What it Does</h4>
+          <ul>
+            <li>
+              This calculator can be used by individuals interested in investing
+              in agricultural real estate to weigh different purchasing options
+              to get the best rate of return.
             </li>
           </ul>
         </CardContent>
