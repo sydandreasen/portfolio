@@ -137,7 +137,9 @@ export const About = (props) => {
           <StyleRoot>
             {/* text greeting */}
             <div style={animations.fadeIn}>
-              <h4>Hello, it is a pleasure to e-meet you!</h4>
+              <p>
+                <b>Hello, it is a pleasure to e-meet you!</b>
+              </p>
               <p>
                 I am a Computer Science student at UNO. I will be graduating
                 with my B.S. in May 2022 and be continuing on as a part-time
@@ -172,14 +174,16 @@ export const About = (props) => {
         <div style={animations.fadeIn} className="pulse-hover">
           <div className="row skills">
             <div className="row">
-              <h3>{`<Skills/>`}</h3>
+              <p>
+                <b>{`<Skills/>`}</b>
+              </p>
             </div>
             <div className="row">
               {skills.map((skill, index) => (
                 <Tooltip key={index} arrow title={skill.title}>
                   <img
                     className="skill-pic"
-                    alt={skill.title}
+                    alt={skill.title + " logo"}
                     src={skill.src}
                   />
                 </Tooltip>
@@ -214,7 +218,7 @@ export const About = (props) => {
               <p>
                 <DescriptionIcon style={{ verticalAlign: "middle" }} />
                 <span> </span>
-                <a download href={resume}>
+                <a download href={resume} type="pdf">
                   Download My Resume
                 </a>
               </p>

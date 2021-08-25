@@ -57,7 +57,10 @@ export const Project = (props) => {
     // front of card!
     <div className={`pulse-hover-project ${side}`}>
       <Card className={`project`}>
-        <Gallery images={props.project.images} />
+        <Gallery
+          images={props.project.images}
+          projectTitle={props.project.title}
+        />
         <CardContent>
           <h3>{props.project.title}</h3>
           <br />

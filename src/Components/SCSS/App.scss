@@ -96,6 +96,10 @@ body {
     padding: 2%;
     text-align: center;
 
+    p b {
+      font-size: calc(10px + 0.5vw);
+    }
+
     .row {
       display: flex;
       flex-wrap: wrap;

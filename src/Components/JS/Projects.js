@@ -242,7 +242,7 @@ export const Projects = (props) => {
       back: (
         <CardContent>
           <h3>myPatient</h3>
-          <h5>Second Place Winner at HackUNO 2021</h5>
+          <h4>Second Place Winner at HackUNO 2021</h4>
           <h5>
             A 24-hour partner project with{" "}
             <a
@@ -716,9 +716,9 @@ export const Projects = (props) => {
       </div>
       <br />
       <StyleRoot>
-        <h3>Projects I Have Completed</h3>
+        <h2>Projects I Have Completed</h2>
         <br />
-        <h4>(As if any Project is Truly Ever Complete)</h4>
+        <h3>(As if any Project is Truly Ever Complete)</h3>
         <br />
         <div className="row projects" style={animations.fadeIn}>
           {projects.map((project) => (
@@ -726,7 +726,7 @@ export const Projects = (props) => {
           ))}
         </div>
         <br />
-        <h3>Projects I am Excited to do Next</h3>
+        <h2>Projects I am Excited to do Next</h2>
         <br />
         <div className="row projects" style={animations.fadeIn}>
           {futureProjects.map((project) => (
