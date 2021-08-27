@@ -57,11 +57,16 @@ import music_sand from "../../Images/DemoPics/FutureProjects/MusicalSandArt.jpg"
 import port_abt from "../../Images/DemoPics/Portfolio_About.png";
 import netflix from "../../Images/DemoPics/FutureProjects/Netflix.jpg";
 import path_find from "../../Images/DemoPics/FutureProjects/PathFind.jpg";
+import chronos_monthly from "../../Images/DemoPics/ProjectChronos/chronos-monthly.png";
+import chronos_weekly from "../../Images/DemoPics/ProjectChronos/chronos-weekly.png";
+import chronos_daily from "../../Images/DemoPics/ProjectChronos/chronos-daily.png";
+import chronos_customization from "../../Images/DemoPics/ProjectChronos/chronos-customization.png";
 
 // import demo videos
 import rockPaperScissors_1 from "../../Demos/RPS-1.mov";
 import mealPlanner_1 from "../../Demos/MP-1.mov";
 import minesweeper from "../../Demos/minesweeper.mov";
+import projectChronosDemo from "../../Demos/project-chronos.mov";
 
 // import dmg
 import cards from "../../Cards.dmg";
@@ -406,6 +411,85 @@ export const Projects = (props) => {
               This calculator can be used by individuals interested in investing
               in agricultural real estate to weigh different purchasing options
               to get the best rate of return.
+            </li>
+          </ul>
+        </CardContent>
+      ),
+    },
+    {
+      title: "Project Chronos",
+      description: "Introduction to Software Engineering group project",
+      images: [
+        chronos_weekly,
+        chronos_monthly,
+        chronos_daily,
+        chronos_customization,
+      ],
+      stack: [
+        { img: angular, title: "Angular" },
+        { img: ts, title: "TS" },
+        { img: css, title: "CSS (SASS)" },
+        { img: html, title: "HTML" },
+        { img: firebase, title: "Firebase" },
+        { img: nosql, title: "NoSQL" },
+      ],
+      links: [
+        // import any components at top and put variable names in here
+        {
+          icon: <GitHubIcon />,
+          title: "Go to GitHub Page",
+          link: () =>
+            window.open("https://github.com/sydandreasen/project-chronos"),
+        },
+        {
+          icon: <PlayCircleOutlineIcon />,
+          title: "Watch the Project's Final Demo Video",
+          link: () => setShowDemo({ show: true, which: [projectChronosDemo] }),
+        },
+        {
+          icon: <OpenInNewIcon />,
+          title: "Open Live Site",
+          link: () =>
+            window.open(
+              "https://project-chronos-planner.firebaseapp.com/login"
+            ),
+        },
+        {
+          icon: <KeyboardArrowRightIcon />,
+        },
+      ],
+      back: (
+        <CardContent>
+          <h3>Project Chronos</h3>
+          <br />
+          <h4>A Class Group Project</h4>
+          <h5>
+            In addition to a dev, I served in the project manager and tech
+            support roles in this group.
+          </h5>
+          <br />
+          <h4>Stack</h4>
+          <ul>
+            <li>Angular, TS, SCSS</li>
+            <li>Angular Material and cdkdragdrop component libraries</li>
+            <li>
+              Google Firebase - hosting, authentication, NoSQL real-time
+              database
+            </li>
+          </ul>
+          <br />
+          <h4>Basic Features</h4>
+          <ul>
+            <li>
+              Plan metrics, tasks, and notes for individual days by dragging and
+              dropping components and entering data
+            </li>
+            <li>Generate weeks from days</li>
+            <li>Export weeks as templates</li>
+            <li>
+              Customize font family and size, as well as overall theme color and
+              which of the three monthly, weekly, daily view should be shown by
+              default
             </li>
           </ul>
         </CardContent>
