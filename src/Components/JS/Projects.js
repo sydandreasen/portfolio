@@ -66,7 +66,7 @@ import chronos_customization from "../../Images/DemoPics/ProjectChronos/chronos-
 import rockPaperScissors_1 from "../../Demos/RPS-1.mov";
 import mealPlanner_1 from "../../Demos/MP-1.mov";
 import minesweeper from "../../Demos/minesweeper.mov";
-import projectChronosDemo from "../../Demos/project-chronos.mov";
+import projectChronosDemo from "../../Demos/project-chronos.mp4";
 
 // import dmg
 import cards from "../../Cards.dmg";
