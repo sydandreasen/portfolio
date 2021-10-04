@@ -7,7 +7,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import DescriptionIcon from "@material-ui/icons/Description";
 import { fadeIn } from "react-animations";
 import Radium, { StyleRoot } from "radium";
-import profPic from "../../Images/PP_ProfilePic.JPG";
+import profPic from "../../Images/Profile.PNG";
 import matlab from "../../Images/Tech/matlab.png";
 import html from "../../Images/Tech/html.png";
 import java from "../../Images/Tech/java.png";
