@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c93b23b2.chunk.css",
-    "main.js": "/portfolio/static/js/main.7cc44cc1.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.7cc44cc1.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.197fe6cb.chunk.css",
+    "main.js": "/portfolio/static/js/main.25973d0b.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.25973d0b.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.03803cd2.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.03803cd2.js.map",
     "static/js/2.269cfb70.chunk.js": "/portfolio/static/js/2.269cfb70.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.3600cdfa.chunk.js": "/portfolio/static/js/3.3600cdfa.chunk.js",
     "static/js/3.3600cdfa.chunk.js.map": "/portfolio/static/js/3.3600cdfa.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.c93b23b2.chunk.css.map": "/portfolio/static/css/main.c93b23b2.chunk.css.map",
+    "static/css/main.197fe6cb.chunk.css.map": "/portfolio/static/css/main.197fe6cb.chunk.css.map",
     "static/js/2.269cfb70.chunk.js.LICENSE.txt": "/portfolio/static/js/2.269cfb70.chunk.js.LICENSE.txt",
     "static/media/Andreasen_Sydney_Resume_2021.98514d2c.pdf": "/portfolio/static/media/Andreasen_Sydney_Resume_2021.98514d2c.pdf",
     "static/media/Cards.425b32f8.png": "/portfolio/static/media/Cards.425b32f8.png",
@@ -19,10 +19,10 @@
     "static/media/MP-1.bbaf9e24.mov": "/portfolio/static/media/MP-1.bbaf9e24.mov",
     "static/media/MusicalSandArt.475efc31.jpg": "/portfolio/static/media/MusicalSandArt.475efc31.jpg",
     "static/media/Netflix.73ced1b9.jpg": "/portfolio/static/media/Netflix.73ced1b9.jpg",
-    "static/media/PP_ProfilePic.073fb6c9.JPG": "/portfolio/static/media/PP_ProfilePic.073fb6c9.JPG",
     "static/media/PathFind.8283e0dd.jpg": "/portfolio/static/media/PathFind.8283e0dd.jpg",
     "static/media/PlayingCards.9c851d92.jpg": "/portfolio/static/media/PlayingCards.9c851d92.jpg",
     "static/media/Portfolio_About.6826ba9b.png": "/portfolio/static/media/Portfolio_About.6826ba9b.png",
+    "static/media/Profile.2317ff5f.PNG": "/portfolio/static/media/Profile.2317ff5f.PNG",
     "static/media/RPS-1.96891f69.mov": "/portfolio/static/media/RPS-1.96891f69.mov",
     "static/media/RPS-1.bc5d2627.png": "/portfolio/static/media/RPS-1.bc5d2627.png",
     "static/media/RPS-2.d22c6352.png": "/portfolio/static/media/RPS-2.d22c6352.png",
@@ -59,7 +59,7 @@
   "entrypoints": [
     "static/js/runtime-main.03803cd2.js",
     "static/js/2.269cfb70.chunk.js",
-    "static/css/main.c93b23b2.chunk.css",
-    "static/js/main.7cc44cc1.chunk.js"
+    "static/css/main.197fe6cb.chunk.css",
+    "static/js/main.25973d0b.chunk.js"
   ]
 }
