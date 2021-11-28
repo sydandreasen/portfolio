@@ -1,0 +1,62 @@
+@import "./Variables.scss";
+
+.profile-pic {
+  width: 70%;
+  margin: auto;
+  margin-bottom: 16px;
+}
+
+.skills {
+  background-color: $shell;
+  color: $dark;
+  padding: 1%;
+  border-radius: 1vw;
+  width: 67%;
+  border: 3px $dblue solid;
+  box-shadow: $lblue 2px 3px 2px;
+  margin: 0 auto 10px auto;
+
+  // TODO consider new ways to style this with the css grid,
+  // or perhaps adding breakpoints, such that the wrapping looks better;
+  // not a fan of the left-justification on the partial row.
+  // would a grid direction type of field work?
+  .skills-pics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(36px, 1fr));
+    padding: 0 0.4rem;
+
+    .skill-pic {
+      margin: 0 auto;
+      padding: 1%;
+      width: 3%;
+      max-height: 6vw;
+      min-width: 30px;
+    }
+  }
+}
+
+.contacts {
+  margin: 4% auto;
+  width: 90%;
+  display: grid;
+  grid-column-gap: 2.4rem;
+  grid-template-columns: 1fr;
+
+  .contact {
+    text-align: left;
+    a {
+      color: $shell;
+    }
+    p {
+      border-top: $lblue solid 1px;
+      padding-top: 1.5%;
+      margin-top: 1.5%;
+    }
+  }
+}
+
+@media (min-width: 850px) {
+  .contacts {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}

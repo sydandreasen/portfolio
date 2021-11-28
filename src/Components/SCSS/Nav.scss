@@ -1,0 +1,19 @@
+@import "./Variables.scss";
+
+.nav-wrapper {
+  background-color: $dark !important;
+
+  .nav-tabs {
+    .nav-tab {
+      color: $light;
+    }
+
+    .Mui-selected {
+      color: $shell;
+    }
+
+    .MuiTabs-indicator {
+      background-color: $shell !important;
+    }
+  }
+}

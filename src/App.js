@@ -5,11 +5,12 @@ import { Projects } from "./Components/JS/Projects.js";
 import "./Components/SCSS/App.scss";
 
 function App() {
-  const [page, setPage] = useState("About");
+  const defaultPage = "About";
+  const [page, setPage] = useState(defaultPage);
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="app">
+      <header>
         <Nav page={page} setPage={(page) => setPage(page)} />
       </header>
       <div className="main-content">

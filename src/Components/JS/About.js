@@ -1,4 +1,5 @@
 import React from "react";
+import "../SCSS/About.scss";
 import Tooltip from "@material-ui/core/Tooltip";
 import EmailIcon from "@material-ui/icons/Email";
 import PhoneIcon from "@material-ui/icons/Phone";
@@ -172,13 +173,13 @@ export const About = (props) => {
       <StyleRoot>
         {/* skills */}
         <div style={animations.fadeIn} className="pulse-hover">
-          <div className="row skills">
-            <div className="row">
+          <div className="skills">
+            <div>
               <p>
                 <b>{`<Skills/>`}</b>
               </p>
             </div>
-            <div className="row">
+            <div className="skills-pics">
               {skills.map((skill, index) => (
                 <Tooltip key={index} arrow title={skill.title}>
                   <img
@@ -199,61 +200,54 @@ export const About = (props) => {
         </StyleRoot>
       </div>
       {/* contacts */}
-      <div className="row contacts">
-        <div className="half-column">
-          <StyleRoot>
-            <div style={animations.fadeIn} className="pulse-hover">
-              <p>
-                <EmailIcon style={{ verticalAlign: "middle" }} />
-                <span> Email Me : </span>
-                <a href="mailto:sydandreasen@gmail.com">
-                  sydandreasen@gmail.com
-                </a>
-              </p>
-              <p>
-                <PhoneIcon style={{ verticalAlign: "middle" }} />
-                <span> Call or Text Me : </span>
-                <a href="tel:4022370162">402-237-0162</a>
-              </p>
-              <p>
-                <DescriptionIcon style={{ verticalAlign: "middle" }} />
-                <span> </span>
-                <a download href={resume} type="pdf">
-                  Download My Resume
-                </a>
-              </p>
-            </div>
-          </StyleRoot>
-        </div>
+      <div className="contacts">
+        <StyleRoot className="contact">
+          <div style={animations.fadeIn} className="pulse-hover">
+            <p>
+              <EmailIcon style={{ verticalAlign: "middle" }} />
+              <span> Email : </span>
+              <a href="mailto:sydandreasen@gmail.com">sydandreasen@gmail.com</a>
+            </p>
+          </div>
+        </StyleRoot>
 
-        <div className="half-column">
-          <StyleRoot>
-            <div style={animations.fadeIn} className="pulse-hover">
-              <p>
-                <LinkedInIcon style={{ verticalAlign: "middle" }} />
-                <span> LinkedIn Profile : </span>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://www.linkedin.com/in/sydney-a/"
-                >
-                  sydney-a
-                </a>
-              </p>
-              <p>
-                <FacebookIcon style={{ verticalAlign: "middle" }} />
-                <span> Facebook Profile : </span>
-                <a
-                  target="_blank"
-                  rel="noreferrer"
-                  href="https://www.facebook.com/sydney.andreasen"
-                >
-                  sydney.andreasen
-                </a>
-              </p>
-            </div>
-          </StyleRoot>
-        </div>
+        <StyleRoot className="contact">
+          <div style={animations.fadeIn} className="pulse-hover">
+            <p>
+              <PhoneIcon style={{ verticalAlign: "middle" }} />
+              <span> Call or Text : </span>
+              <a href="tel:4022370162">402-237-0162</a>
+            </p>
+          </div>
+        </StyleRoot>
+
+        <StyleRoot className="contact">
+          <div style={animations.fadeIn} className="pulse-hover">
+            <p>
+              <DescriptionIcon style={{ verticalAlign: "middle" }} />
+              <span> </span>
+              <a download href={resume} type="pdf">
+                Download My Resume
+              </a>
+            </p>
+          </div>
+        </StyleRoot>
+
+        <StyleRoot className="contact">
+          <div style={animations.fadeIn} className="pulse-hover">
+            <p>
+              <LinkedInIcon style={{ verticalAlign: "middle" }} />
+              <span> LinkedIn : </span>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/sydney-a/"
+              >
+                sydney-a
+              </a>
+            </p>
+          </div>
+        </StyleRoot>
       </div>
     </div>
   );

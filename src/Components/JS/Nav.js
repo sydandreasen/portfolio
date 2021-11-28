@@ -2,6 +2,7 @@ import React from "react";
 import { Tabs, Tab, AppBar } from "@material-ui/core";
 import { fadeInDown } from "react-animations";
 import Radium, { StyleRoot } from "radium";
+import "../SCSS/Nav.scss";
 
 export const Nav = (props) => {
   const pages = ["About", "Projects"];

@@ -6,6 +6,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardActions from "@material-ui/core/CardActions";
 import IconButton from "@material-ui/core/IconButton";
 import KeyboardArrowLeftIcon from "@material-ui/icons/KeyboardArrowLeft";
+import "../SCSS/Project.scss";
 
 export const Project = (props) => {
   // set up state of which side of card is shown

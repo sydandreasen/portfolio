@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Project } from "./Project.js";
+import "../SCSS/Projects.scss";
 import CardContent from "@material-ui/core/CardContent";
 import Modal from "@material-ui/core/Modal";
 

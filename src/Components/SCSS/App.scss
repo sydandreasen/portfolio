@@ -1,14 +1,6 @@
-$grape: #94618e;
-$eggplant: #49274a;
-$sand: #f4decb;
-$shell: #f8eee7;
+@import "./Variables.scss";
 
-$dark: #25274d;
-$purple: #464866;
-$light: #aaabb8;
-$lblue: #2e9cca;
-$dblue: #29648a;
-
+// shared/app-level styles
 * {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -24,6 +16,7 @@ body {
   background-color: $purple;
 }
 
+// shared animations
 .pulse-hover {
   :hover {
     transform: scale(1.025);
@@ -45,51 +38,9 @@ body {
   }
 }
 
-.pulse-hover-project {
-  width: 30.5%;
-  min-width: 400px;
-  margin: 1%;
-
-  :hover {
-    transform: scale(1.025);
-    transition: transform 0.5s;
-  }
-
-  .MuiCard-root {
-    display: inline-block;
-
-    .MuiCardMedia-root img:hover {
-      transform: none;
-    }
-    .MuiCardContent-root :hover {
-      transform: none;
-    }
-    div:hover {
-      transform: none;
-    }
-  }
-}
-
-.App {
+// app component styles
+.app {
   height: 100%;
-
-  .nav-wrapper {
-    background-color: $dark;
-
-    .nav-tabs {
-      .nav-tab {
-        color: $light;
-      }
-
-      .Mui-selected {
-        color: $shell;
-      }
-
-      .MuiTabs-indicator {
-        background-color: $shell !important;
-      }
-    }
-  }
 
   .main-content {
     color: $shell;
@@ -100,6 +51,7 @@ body {
       font-size: calc(10px + 0.5vw);
     }
 
+    // TODO clean up grid styling in scss and markup
     .row {
       display: flex;
       flex-wrap: wrap;
@@ -136,15 +88,6 @@ body {
       padding: 0 1%;
     }
 
-    .profile-pic {
-      width: 70%;
-      margin: auto;
-      // border-radius: 6%;
-      // border: 6px $dblue solid;
-      // box-shadow: $lblue 6px 8px 4px;
-      margin-bottom: 16px;
-    }
-
     .text {
       text-align: left;
 
@@ -153,50 +96,6 @@ body {
         padding-top: 1%;
         border-top: $lblue solid 1px;
       }
-    }
-
-    .skills {
-      background-color: $shell;
-      color: $dark;
-      padding: 1%;
-      border-radius: 1vw;
-      width: 67%;
-      border: 4px $dblue solid;
-      box-shadow: $lblue 4px 6px 4px;
-      margin-bottom: 10px;
-
-      .skill-pic {
-        padding: 1%;
-        width: 3%;
-        max-height: 6vw;
-        min-width: 30px;
-      }
-    }
-
-    .contacts {
-      margin: 4% auto;
-
-      .half-column {
-        // overwrite generic .half-column
-        justify-content: center;
-        text-align: left;
-        a {
-          color: $shell;
-        }
-        p {
-          border-top: $lblue solid 1px;
-          padding-top: 1.5%;
-          margin-top: 1.5%;
-        }
-      }
-    }
-  }
-
-  .tech {
-    width: 45px;
-    height: 45px;
-    img {
-      width: 100%;
     }
   }
 
@@ -248,43 +147,6 @@ body {
       .arrow-right {
         right: 8%;
       }
-    }
-  }
-
-  footer {
-    text-align: center;
-    color: $shell;
-    padding: 0.2%;
-  }
-}
-
-.projects {
-  align-items: flex-start;
-  .project {
-    flex: 1 auto;
-  }
-  .skills-and-links-row {
-    .MuiCardActions-root {
-      padding: 0;
-      margin: 0;
-    }
-  }
-
-  .back {
-    // back of card to show
-    text-align: left;
-    h3 {
-      font-size: calc(9px + 0.5vw);
-    }
-    h4 {
-      font-size: calc(8px + 0.5vw);
-    }
-    ul {
-      padding-left: 4%;
-      font-size: calc(7px + 0.4vw);
-    }
-    p {
-      font-size: calc(7px + 0.4vw);
     }
   }
 }
