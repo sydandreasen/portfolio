@@ -7,3 +7,8 @@ Snippets about me, my goals, and my skills. Highlights of projects and links to 
 Built with React.js, utilizing Material UI components, JS, and CSS (via SCSS).
 
 ### Live [here](https://sydandreasen.github.io/portfolio/).
+
+### Deployments
+
+1.  run `npm run predeploy` and
+1.  run `npm run deploy`
