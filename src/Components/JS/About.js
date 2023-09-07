@@ -8,7 +8,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import DescriptionIcon from "@material-ui/icons/Description";
 import { fadeIn } from "react-animations";
 import Radium, { StyleRoot } from "radium";
-import profPic from "../../Images/Profile.PNG";
+import profPic from "../../Images/Profile.webp";
 import matlab from "../../Images/Tech/matlab.png";
 import html from "../../Images/Tech/html.png";
 import java from "../../Images/Tech/java.png";
@@ -27,7 +27,7 @@ import vscode from "../../Images/Tech/vscode.png";
 import git from "../../Images/Tech/git.png";
 import unity from "../../Images/Tech/unity.png";
 import adobexd from "../../Images/Tech/adobexd.png";
-import resume from "../../Andreasen_Sydney_Resume_2021.pdf";
+import resume from "../../AndreasenResume2023.pdf";
 
 export const About = (props) => {
   // setup animation styles
@@ -139,31 +139,21 @@ export const About = (props) => {
             {/* text greeting */}
             <div style={animations.fadeIn}>
               <p>
-                <b>Hello, it is a pleasure to e-meet you!</b>
+                Hello! I am a professional full stack web application developer
+                with a B.S. in Computer Science from UNO, and I will earn my
+                M.S. in C.S. from UNO in May 2024.
               </p>
               <p>
-                I am a Computer Science student at UNO. I will be graduating
-                with my B.S. in May 2022 and be continuing on as a part-time
-                student to get my M.S. in C.S. through UNO's integrated program.
+                I love to learn about design patterns, new technologies, and new
+                features in familiar technologies. I enjoy working in a hybrid
+                collaborative environment where my teammates and I can learn
+                from one another.
               </p>
               <p>
-                My hobbies include playing cards, learning to dance, watching
-                softball, going on walks, and watching the greatest TV show of
-                all time: Friends.
-              </p>
-              <p>
-                Currently, I very much enjoy programming with React and Angular,
-                but I would love to improve my understanding in full stack
-                applications. I'd be really interested in learning about .NET
-                and MVC architecture next. In my research work at the UNO
-                Biomechanics Research Building, my favorite projects that I am
-                involved in are virtual reality projects, where I create
-                environments with Unity and C#.
-              </p>
-              <p>
-                In the future, I would love to be a Software Engineer for a
-                company that provides its developers with the opportunity to
-                work across various technologies, as I love to learn.
+                Professionally, my day-to-day tech stack includes Angular
+                frontends, C# .NET Core for REST APIs, and a SQL database
+                backend. That said, you will find many other technologies listed
+                for the various projects in this portfolio.
               </p>
             </div>
           </StyleRoot>
